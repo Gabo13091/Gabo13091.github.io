@@ -54,8 +54,63 @@
     </div>
     <main>
         <article>
-            <h2 id="cap-4">Parte IV</h2>
-            <p>dolor sit amet, consectetur adipisicing elit. Accusamus quidem adipisci consequuntur, ipsam cum earum aspernatur ab atque neque consequatur incidunt illo delectus rerum cumque magni excepturi sed, nobis repellendus?</p>
+            <h2 id="cap-4">Funciones</h2>
+            <br>
+            <p>Las funciones son un conjunto de procedimiento encapsulados en un bloque, usualmente reciben parámetros, cuyos valores utilizan para efectuar operaciones y adicionalmente retornan un valor.
+                Esta definición proviene de la definición de función matemática la cual posee un dominio y un <br> rango, es decir un conjunto de valores que puede tomar y un conjunto de valores que puede retornar luego de cualquier operación.</p>
+                <br>
+                <h2>Ejemplos de funciones</h2>
+                <br>
+                <p>El siguiente programa lee por teclado un año y calcula y muestra si es bisiesto. Para realizar el cálculo utiliza una función llamada bisiesto.</p>
+                <br>La función bisiesta recibe el año leído por teclado, comprueba si es o no bisiesto y devuelve 1 si lo es o 0 si no lo es.<br>
+            <br>
+            <img src="image/Ejmplo de funciones1.jpg" alt="">
+          <br>
+          <br>
+         <p>La siguiente función acepta dos enteros de un autor de llamada y devuelve su suma; a y b son parámetros de tipo int.</p>
+         <br>
+         <img src="image/Ejemplo de funciones2.jpg" alt="">
+         <br>
+         <br>
+         <h2>Prototipos</h2>
+         <br>
+         <p>En C++ es obligatorio usar prototipos. Un prototipo es una declaración de una función.
+            Consiste en una presentación de la función, exactamente con la misma estructura que la definición, pero sin cuerpo y terminada con un «;». </p>
+         <br>Un prototipo sirve para indicar al compilador los tipos de retorno y de los parámetros de una función, de modo que compruebe si son del tipo correcto cada vez que se use esta función dentro del programa, o para hacer las conversiones de tipo cuando sea necesario.<br>
+         <br> Normalmente, los prototipos de las funciones se declaran dentro del fichero del programa, o bien se incluyen desde un fichero externo, llamado fichero de cabecera, (para esto se usa la directiva #include).<br>
+         <br>
+         <h2>Ejemplos de prototipos</h2>
+         <br> 
+         <p>
+            Para corregir el código, defina o declare struct o union en el ámbito global antes del prototipo de función:
+         </p>
+         <br>
+         <img src="image/prototipo1.jpg" alt="">
+         <br>
+         <br>
+         <p>Las declaraciones de parámetro completas (int a) se pueden mezclar con declaradores abstractos (int) en la misma declaración. Por ejemplo, la siguiente declaración es válida:</p> <br>
+         
+         <img src="image/prototipo2.jpg" alt="">
+         <br>
+         <br>
+         <h2>Paso de argumentos</h2>
+         <br>
+         <p>
+            Un argumento puede ser cualquier valor de tipo fundamental, estructura, unión o puntero. Todos los argumentos se pasan por valor. 
+            Esto significa que se asigna una copia del argumento al parámetro correspondiente. La función no conoce la ubicación de memoria real del argumento pasado. 
+            La función utiliza esta copia sin afectar a la variable de la que se derivó originalmente.<br>
+            <br>Aunque no puede pasar matrices o funciones como argumentos, puede pasar punteros a estos elementos. 
+            Los punteros son una manera de que una función acceda a un valor por referencia, Puesto que un puntero contiene la dirección de la variable, la función puede usar esta dirección para tener acceso al valor de la variable. 
+            Los argumentos de puntero permiten que una función obtenga acceso a las matrices y funciones, aunque las matrices y funciones no se pueden pasar como argumentos.<br>
+         </p>
+         <br>
+         <h2>Ejemplo de argumentos</h2>
+         <br>
+         <p>
+            En este ejemplo se usan punteros como argumentos:
+         </p>
+         <br>
+         <img src="image/pase de argumento.jpg" alt="">
         </article>
     </main>
 </body>
