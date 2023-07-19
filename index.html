@@ -65,7 +65,48 @@
                 <h2 id="5.1.1">Arrays Unidimensionales</h2>
                 <p>Un array unidimensional, también conocido como vector, es una estructura que almacena una secuencia de elementos del mismo tipo. Estos elementos están indexados de forma consecutiva, lo que permite acceder a ellos mediante un número entero, llamado índice.</p>
                 <h2 id="5.1.2">Declaración de Arrays</h2>
-                <p></p>
+                <p>La declaración de un array en C++ se refiere al proceso de crear una variable que almacena una colección de elementos del mismo tipo. Un array se compone de elementos consecutivos en memoria, y se puede acceder a cada elemento utilizando un índice entero.
+
+La sintaxis general para la declaración de un array en C++ es la siguiente:
+
+tipo nombreArray[tamaño];
+
+
+Donde "tipo" es el tipo de dato de los elementos del array, "nombreArray" es el nombre que se asigna al array y "tamaño" indica la cantidad de elementos que puede almacenar el array.
+Ejemplo:
+#include <iostream>
+using namespace std;
+
+int main() {
+  int miArray[5]; // Declaración del array de enteros
+
+  // Asignar valores a los elementos del array
+  miArray[0] = 10;
+  miArray[1] = 20;
+  miArray[2] = 30;
+  miArray[3] = 40;
+  miArray[4] = 50;
+
+  // Acceder y mostrar los elementos del array
+  cout << "Elementos del array:" << endl;
+  for (int i = 0; i < 5; i++) {
+    cout << miArray[i] << " ";
+  }
+  cout << endl;
+
+  return 0;
+}
+
+
+En este ejemplo, primero se declara el array de enteros miArray con un tamaño de 5. Luego, se asignan valores a cada uno de los elementos del array.
+
+Después, utilizamos un bucle for para recorrer el array y mostrar sus elementos uno por uno utilizando cout.
+
+La salida en la consola será:
+
+Elementos del array:
+10 20 30 40 50
+</p>
                 <h2 id="5.1.3">Ejemplos</h2>
                 <p></p>
                 <h2 id="5.1.4">Array Bidimensionales (Matrices)</h2>
