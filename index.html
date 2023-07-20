@@ -29,7 +29,7 @@
         <div class="cont-menu">
             <nav>
                 <a href="#cap-1">Capitulo I</a>
-                <a href="#">Capitulo II</a>
+                <a href="#cap-2">Capitulo II</a>
                 <a href="#">Capitulo III</a>
                 <a href="#cap-4">Capitulo IV</a>
                 <a href="#cap-5">Capitulo V</a>
@@ -44,18 +44,15 @@
     <h1 id="Inicio" class="texto_inicio">Algoritmica y Programación</h1>
     <main>
         <article>
-            <h2 id="cap-1">Pagina Inicio</h2>
             <h2 id=>Estructura de un programa</h2>
             <br>
-            <p>En general, los programas escritos en C++ tienen una estructura (básica) compuesta por tres secciones:
-                  <br>
-1.	Directivas de preprocesador
+            <p>En general, los programas escritos en C++ tienen una estructura (básica) compuesta por tres secciones:</p>
                 <br>
-2.	Declaraciones globales
+<p>1.	Directivas de preprocesador</p>
                 <br>
-3.	Declaración de funciones
+<p>2.	Declaraciones globales</p>
                 <br>
-</p>
+<p>3.	Declaración de funciones</p>
                <br>
             <p> •	Directivas de preprocesador
 Los compiladores de C++ proporcionan bibliotecas de funciones, y cada biblioteca de funciones tiene asociada un archivo de definición que se denomina cabecera.
@@ -71,14 +68,92 @@ En esta sección se declaran todas variables y cabeceras de funciones que serán
 La última sección del programa es la declaración de funciones. La primera función que se debe declarar es la función principal o "main". La función main es la más importante, 
                  pues es la que es invocada cuando el programa se ejecuta. Toda instrucción que no sea declarada dentro de esta, simplemente no será considerada.
 </p>
-            
-
+            <br>    
         </article>
     </main>
     <div class="image_fond">
         <h2></h2>
         <p></p>
     </div>
+     <main>
+        <article>
+            <h2 id=>Tipos de Datos en C++</h2>
+            <br>
+              <p> Tipos de datos simples en C++</p>
+            <br>
+            <p>C++ es un lenguaje de programación que hereda muchos conceptos del lenguaje C, es un lenguaje compilado y fuertemente tipado, 
+                lo que significa que en las variables con las que trabajamos hay que indicar el tipo del dato que van a guardar cuando se declaran, 
+                lo que puede hacer que tengamos problemas y se generen errores.</p>
+            <br>  
+            <p>Los tipos de datos básicos normalmente son los numéricos y en la siguiente tabla podemos ver estos tipos de datos simples en C++, 
+                su nombre, descripción, el tamaño definido por el tipo de dato, que proporciona la cantidad de información que podemos guardar en una variable de ese tipo de dato, 
+                y el rango de valores que permite almacenar.</p>
+            <br>
+             <img src="image/Tipos en C++.jpg" alt="">
+             <br>
+             <p> Tipos de datos complejos en C++</p>
+              <br>
+            <p> •	Matrices / Array</p>
+              <br>
+            <p> Los array son un tipo dato complejo, en el sentido de que nos permiten guardar conjuntos de datos, pero siempre datos del mismo tipo.</p>
+              <br>
+            <p>Sintaxis: int numeros [5] = {1, 2, 3, 4, 5};</p>
+              <br>
+            <p>Hay que recordar que un array es una estructura estática, es decir, el tamaño del mismo no cambia a lo largo de la ejecución del programa.</p>
+             <br>
+            <p>•    Estructuras</p>
+            <br>
+            <p>Las estructuras nos permiten guardar un conjunto de datos, pero esos datos pueden ser de distinto tipo.</p>
+            <br>
+            <p>Sintaxis: struct tiempo {int hora, minuto, segundo};</p>
+             <br>
+             <p>Operaciones básicas en C++</p>
+             <br>
+            <p>Se llaman operadores aritméticos a aquellos que permiten realizar cálculos con valores numéricos para obtener un resultado. 
+                Los operadores aritméticos más habituales son la suma, resta, multiplicación y división.</p>
+             <br>
+            <p>Existen otros operadores admitidos que constituyen formas de expresar abreviadamente una operación, 
+            algunos programadores utilizan con frecuencia expresiones abreviadas porque les resultan más rápidas a la hora de escribir código.</p>
+             <br>
+            <img src="image/Operaciones Aritmeticas.jpg" alt="">
+            <br>
+            <p>Entrada y salida de datos en C++. Uso de cin y cout.</p>
+            <br>
+            <p>La entrada y salida de datos en C++ es simple (al menos para los casos más comunes).
+            Mostrar texto por pantalla en C++ es muy simple. Para imprimir una salida de texto en C++ se hace uso de la instrucción cout, junto con (<<).
+            Es importante tener en cuenta que la instrucción cout siempre va acompañada de (<<) para controlar el flujo de datos que sale. No te fijes mucho en ellos, 
+            solo ten siempre presente que cout viene acompañado de (<<) para tener cout (<<)  como resultado</p>
+                <br>
+                <p>Leer datos por teclado en C++ se hace usando el comando cin >> es importante notar el uso de los dos signos >> que son usados para controlar el flujo de datos.
+                No te preocupes mucho por ellos, solo ten en cuenta que cada vez que vaya a usar la instrucción cin debes agregarle >> para quedar con un cin>>. 
+                Una manera muy sencilla de recordar esta instrucción es que in significa entrar y como estamos programando en C++ le añadimos la letra C al comienzo quedando así cin>> (sin olvidar los >>).</p>
+                <br>
+                <p>Uso de scanf para leer valores y cadenas de texto (string) en C++</p>
+                <br>
+                <p>El operador scanf al igual que printf fueron ideados para el lenguaje C (no para C++), por lo cual su uso es más primitivo y, en cierto modo, complejo. 
+                Leer datos con scanf implica comprender un poco el concepto de punteros y particularmente en el caso de string (que es una librería de C++) se complica aún más, 
+                pues debemos convertir ese string en un array definido de caracteres (char).</p>
+                <br>
+                <p>Modificadores en C++</p>
+                <br>
+                <p>Los modificadores de tipo, como dicen su nombre, modifica los tipos de datos de acuerdo a su rango. Por ejemplo:</p>
+                   <br>
+                  <p>1.	short (corto) afecta a int.</p>
+                   <br>
+                  <p>2.	long (largo) afecta a int y double.</p>
+                   <br>
+                  <p>3.	signed (con signo) afecta a chat y int.</p>
+                   <br>
+                  <p>4.	unsigned (sin signo) afecta a chat y int.</p>
+                   <br>
+                <p>Los ejemplos de uso son muy simples, por ejemplo, si queremos un int corto usamos lo siguiente: short int.</p>
+                      <br>
+                <p>Si queremos un entero largo sin signo usamos lo siguiente: unsigned long int.</p>
+                      <br>
+                <p>El uso que se le puede dar a los modificados pueden ser muchos, para cálculos exactos, programas con características especiales, etc.</p>
+                      <br>
+    </article>
+    </main>
     <main>
         <article>
             <h2 id="cap-4">Funciones</h2>
