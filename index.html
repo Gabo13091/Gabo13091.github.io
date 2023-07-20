@@ -248,11 +248,27 @@ La última sección del programa es la declaración de funciones. La primera fun
 <p>Por ejemplo: index += 2</p>
                 <br>
                 <br>
-                <h2 id="5.3">Paso de Argumentos e Tipo Arrays</h2>
+                <h2 id="5.3">Paso de Argumentos de Tipo Arrays</h2>
+                <p>C ++ no permite pasar una matriz completa como un argumento a una función. 
+                Sin embargo, puedes pasar un puntero a una matriz especificando el nombre de la matriz sin un índice. 
+                Para pasar una matriz de una sola dimensión como argumento en una función, se debe declarar el parámetro formal en una de las siguientes tres formas 
+                y los tres métodos de declaración producirán resultados similares porque cada uno le dice al compilador que recibirá un puntero entero.</p>
                 <br>
                 <br>
                 <h2 id="5.3.1">Ejemplos</h2>
-                <p></p>
+                <br>
+<p>
+Método 1: Parámetro como puntero.
+                <br>
+void MiFuncion(int *parametro) {
+
+    //código de la función
+
+}
+
+</p>
+                <br>
+
                 <h2 id="5.4">Arreglos Multidimensionales</h2>
                 <p></p>
                 <h2 id="5.5">Ejemplo</h2>
