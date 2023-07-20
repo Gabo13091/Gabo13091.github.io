@@ -90,9 +90,9 @@ La última sección del programa es la declaración de funciones. La primera fun
                 y el rango de valores que permite almacenar.</p>
             <br>
             
-                <img src="images/Tipos en C++.jpg">
+                <img src="images/Tipos en C++.png">
             
-             <img src="image/Tipos en C++.jpg" alt="">
+             <img src="image/Tipos en C++.png" alt="">
              <br>
              <p> Tipos de datos complejos en C++</p>
               <br>
@@ -118,7 +118,7 @@ La última sección del programa es la declaración de funciones. La primera fun
             <p>Existen otros operadores admitidos que constituyen formas de expresar abreviadamente una operación, 
             algunos programadores utilizan con frecuencia expresiones abreviadas porque les resultan más rápidas a la hora de escribir código.</p>
              <br>
-            <img src="image/Operaciones Aritmeticas.jpg" alt="">
+            <img src="image/Operaciones Aritmeticas.png" alt="">
             <br>
             <p>Entrada y salida de datos en C++. Uso de cin y cout.</p>
             <br>
@@ -277,8 +277,10 @@ La última sección del programa es la declaración de funciones. La primera fun
         <article>
             <h2 id="cap-5">Parte V</h2>
                 <h2 id="5.1">Arrays y Cadenas</h2>
+            <br>
                 <p>Un array es una colección de elementos del mismo tipo, colocados de forma consecutiva en memoria. Las cadenas de caracteres son declaradas en C como arrays de caracteres y permiten la utilización de un cierto número de notaciones y de funciones especiales.</p>
-                <h2 id="5.1.1">Arrays Unidimensionales</h2>
+        </br>
+            <h2 id="5.1.1">Arrays Unidimensionales</h2>
                 <p>Un array unidimensional, también conocido como vector, es una estructura que almacena una secuencia de elementos del mismo tipo. Estos elementos están indexados de forma consecutiva, lo que permite acceder a ellos mediante un número entero, llamado índice.</p>
                 <h2 id="5.1.2">Declaración de Arrays</h2>
                 <p>La declaración de un array en C++ se refiere al proceso de crear una variable que almacena una colección de elementos del mismo tipo. Un array se compone de elementos consecutivos en memoria, y se puede acceder a cada elemento utilizando un índice entero.</p>
@@ -325,17 +327,50 @@ La última sección del programa es la declaración de funciones. La primera fun
 
 <br>Elementos del array:</br>
 <br>10 20 30 40 50</br></p>
-                <h2 id="5.1.4">Array Bidimensionales (Matrices)</h2>
-                <p></p>
-                <h2 id="5.1.5">Declaración de Arrays</h2>
+    <br><h2 id="5.1.4">Array Bidimensionales (Matrices)</h2></br>
+                <br><p>Un array bidimensional, también conocido como matriz, es una estructura de datos que almacena elementos en filas y columnas. Es útil para representar estructuras tabulares o conjuntos de datos de dos dimensiones.</p></br>
+               <br> <h2 id="5.1.5">Declaración de Arrays</h2></br>
+     <p>La declaración de un array bidimensional en C++ implica especificar el tipo de los elementos, el nombre del array y el tamaño de las filas y columnas</p>
                 <h2 id="5.1.6">Ejemplos</h2>
-                <p></p>
-                <h2 id="5.1.7">Array Tridimensionales y Multidimensionales</h2>
-                <p></p>
-                <h2 id="5.1.8">Declaración de Arrays</h2>
-                <p></p>
-                <h2 id="5.1.9">Ejemplos</h2>
-                <p></p>
+               <br> <p>Un ejemplo de declaración de una matriz de enteros 3x3:</br>
+
+<br>int matriz[3][3];</br>
+
+
+<br>En este caso, se declara una matriz llamada "matriz" que puede almacenar 3 filas y 3 columnas de elementos enteros. Los elementos se pueden acceder utilizando índices bidimensionales, como matriz[i][j], donde i representa la fila y j representa la columna.</br>
+
+<br>Un ejemplo de cómo inicializar y acceder a los elementos de una matriz:</br>
+    <br> <img src="image/ejemplo bidimensional1.JPG" alt=""></br>
+    
+<br>En este ejemplo, se declara una matriz 3x3 de enteros llamada "matriz" y se inicializa con valores del 1 al 9.</br>
+
+<br>Luego, utilizamos dos bucles for anidados para recorrer la matriz y mostrar sus elementos utilizando cout. Cada elemento se accede mediante los índices i y j.</br>
+
+<br>La salida en la pantalla será:</br>
+<br> <img src="image/elementosmatriz.JPG" alt=""></br>
+</p>
+                 <br><h2 id="5.1.7">Array Tridimensionales y Multidimensionales</h2></br>
+                <br><p>Array multidimensional en C++:
+Un array multidimensional es una estructura de datos que almacena elementos en más de dos dimensiones. Puedes pensar en ellos como matrices anidadas, donde cada elemento puede contener un array adicional.
+               <br> El arreglo tridimensional o de tres dimensiones, está formado por un conjunto de elementos de un mismo tipo de datos que se almacenan bajo un mismo nombre y que, al igual que en los unidimensionales y bidimensionales, se diferencian por la posición que tiene cada elemento dentro del arreglo de datos, con la aclaración de que la disposición de los elementos es una combinación del arreglo unidimensional y bidimensional</br>
+                </p></br>
+                 <br> <h2 id="5.1.8">Declaración de Arrays</h2></br>
+               <br> <p>La declaración de un array multidimensional en C++ implica especificar el tipo de los elementos, el nombre del array y los tamaños de cada dimensión. Aquí tienes un ejemplo de declaración de un array multidimensional de enteros 2x3x4:</br>
+
+<br>int array3D[2][3][4];</br>
+
+<br>En este caso, se declara un array llamado "array3D" con tres dimensiones. Puede almacenar 2 "bloques", cada uno de los cuales contiene 3 filas y 4 columnas de elementos enteros. Los elementos se pueden acceder utilizando índices multidimensionales, como array3D[i][j][k].</br>
+
+<br>
+</p>
+               <br> <h2 id="5.1.9">Ejemplos</h2></br>
+                <br><p><img src="image/arraytridimensioanl.JPG" alt=""></br></p>
+               <br>  En este ejemplo, se declara un array tridimensional llamado "array3D". Luego, se utiliza un conjunto de bucles for anidados para asignar valores a los elementos del array.</br>
+
+ <br>Después, utilizamos bucles for anidados nuevamente para recorrer el array y mostrar sus elementos utilizando cout. Cada elemento se accede mediante índices tridimensionales i, j y k.</br>
+    <br>  La salida en la consola será:</br>
+    <br><p><img src="image/consolatridimensional.JPG" alt=""></br></p>
+</p>
                 <br>
                 <br>
                 <h2 id="5.2">Asignación de Valores</h2>
@@ -441,19 +476,6 @@ La última sección del programa es la declaración de funciones. La primera fun
                 <h2 id="5.7">Iteraciones en Array Unidimensionales, Array Bidimensionales (Matrices), Array Tridimensionales y Multidimensionales</h2>
                 <br>
                 <p></p>
-                <br>
-                <br>
-                <h2 id="5.8">Referencias</h2>
-                <br>
-                p></p>
-                <br>
-                <br>
-                <h2 id="5.8.1">Electrónicas</h2>
-                <br>
-                <p></p>
-                <br>
-                <br>
-                <h2 id="5.8">Bibliográficas</h2>
                 <br>
         </article>
     </main>
