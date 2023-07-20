@@ -233,26 +233,125 @@ La última sección del programa es la declaración de funciones. La primera fun
                 <p></p>
                 <h2 id="5.1.9">Ejemplos</h2>
                 <p></p>
+                <br>
+                <br>
                 <h2 id="5.2">Asignación de Valores</h2>
-                <p></p>
+                <br>
+                <p>Para asignar un valor a una variable de C++, se utiliza una expresión de asignación. Las expresiones de asignación asignan un valor al operando izquierdo. El operando izquierdo debe ser un valor modificable. Un valor es una expresión que representa un objeto de datos que se puede examinar y alterar.</p>
+                <br>
+<p>C contiene dos tipos de operadores de asignación: simple y compuesto. Un operador de asignación simple proporciona el valor del operando derecho al operando izquierdo.</p>
+                <br>
+<p>Nota: Sólo los operadores de asignación que trabajan para C funcionarán para C++, es decir, no hay soporte para operadores sobrecargados.</p>
+                <br>
+                <br>
                 <h2 id="5.2.1">Ejemplos</h2>
-                <p></p>
-                <h2 id="5.3">Paso de Argumentos e Tipo Arrays</h2>
+                <br>
+                <p>Se muestra como se puede asignar el valor de número al miembro employee de la estructura payroll.</p>
+                <br>
+<p>Por ejemplo:payroll.employee = number;</p>
+                <br>
+<p>Los operadores de asignación compuestos realizan una operación en ambos operandos y otorgan el resultado de dicha operación al operando izquierdo.</p>
+                <br>
+<p>Por ejemplo: index += 2</p>
+                <br>
+                <br>
+                <h2 id="5.3">Paso de Argumentos de Tipo Arrays</h2>
+                <br>
+                <p>C ++ no permite pasar una matriz completa como un argumento a una función. 
+                Sin embargo, puedes pasar un puntero a una matriz especificando el nombre de la matriz sin un índice. 
+                Para pasar una matriz de una sola dimensión como argumento en una función, se debe declarar el parámetro formal en una de las siguientes tres formas 
+                y los tres métodos de declaración producirán resultados similares porque cada uno le dice al compilador que recibirá un puntero entero.</p>
+                <br>
+                <br>
                 <h2 id="5.3.1">Ejemplos</h2>
-                <p></p>
+                <br>
+<p>
+    Método 1: Parámetro como puntero.
+</p>
+                <br>
+<p>void MiFuncion(int *parametro) {</p>
+                <br>
+    <p>//código de la función</p>
+                <br>
+<p>}</p>
+                <br>
+<p>
+    Método 2: Parámetro como un Array de tamaño fijo 
+</p>
+                <br>
+<p>void MiFuncion(int *parametro[10]) {</p>
+                <br>
+    <p>//código de la función</p>
+                <br>
+<p>}</p> 
+                <br>
+<p>
+  Método 3: Parámetros como un Array sin tamaño
+</p>
+                <br>
+<p>void MiFuncion(int *parametro[]) {</p>
+                <br>
+    <p>//código de la función</p>
+                <br>
+<p>}</p>
+                <br>
+                <br>
                 <h2 id="5.4">Arreglos Multidimensionales</h2>
-                <p></p>
+                <br>
+                <p>
+                En C++ podemos concebir un arreglo como una variable que almacena a otras variables. 
+                Podemos hacer arreglos de cualquier tipo de variable, incluso de otros arreglos. 
+                Cuando hacemos que cada locación de un arreglo contenga otro arreglo, estamos hablando 
+                de arreglos de dos dimensiones que son más comúnmente llamados matrices.
+                </p>
+                <br>
+    <p>
+    Los arreglos multidimensionales son:
+    </p>
+                <br>
+        <p>1.Declaración de una matriz:las matrices se pueden ver como un arreglo de arreglos o un arreglo de dos dimensiones. 
+            Un arreglo sencillo de enteros de tamaño N se puede declarar como int arr[N];. 
+            Si queremos hacer un arreglo de de tamaño Mde arreglos de tamaño N de enteros entonces habría que hacer algo como int mat[M][N];</p>
+                <br>
+        <p>2.Arreglos de más de dos dimensiones: Siempre se puede declarar arreglos de más de dos dimensiones. Se puede agregar hasta 8 dimensiones en un mismo arreglo. 
+             Esta clase de implementaciones son útiles en diferentes situaciones</p>
+                <br>
+        <p>3.Dimensiones máximas:No solo hay que considerar que máximo se podrá declarar un arreglo de ocho dimensiones.
+            Hay que recordar siempre la cantidad de memoria que estás utilizando. No importa como se maneje el tamaño de cada dimensión, 
+            lo que importa es el tamaño total del arreglo en cuestión. De la misma forma un arreglo de tres dimensiones de 100×100×100
+            está declarando un millón de variables.</p>
+                <br>
+                <br>
                 <h2 id="5.5">Ejemplo</h2>
+                <br>
                 <p></p>
-                <h2 id="5.6">Array de Tipo de Cadena</h2>
-                <p></p>
+                <br>
+                <br>
+                <h2 id="5.6">Array de Tipo de Cadena(STRING)</h2>
+                <br>
+                <p>En C++ las cadenas de caracteres no son más que arrays de caracteres, salvo que a este tipo de arrays el compilador les da un tratamiento especial. 
+                Se puede manipular las cadenas de caracteres de la misma manera en que manipula cualquier otro tipo de array. Sin embargo, es preferible hacer uso de 
+                una librería estándar especialmente escrita para manipulación de cadenas de caracteres, refiriéndose a la librería <string.h> y que viene 
+                incluida con todo compilador de C y C++.</p>
+                <br>
+                <br>
                 <h2 id="5.7">Iteraciones en Array Unidimensionales, Array Bidimensionales (Matrices), Array Tridimensionales y Multidimensionales</h2>
+                <br>
                 <p></p>
+                <br>
+                <br>
                 <h2 id="5.8">Referencias</h2>
+                <br>
                 p></p>
+                <br>
+                <br>
                 <h2 id="5.8.1">Electrónicas</h2>
+                <br>
                 <p></p>
+                <br>
+                <br>
                 <h2 id="5.8">Bibliográficas</h2>
+                <br>
         </article>
     </main>
 </body>
