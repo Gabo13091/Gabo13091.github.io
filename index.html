@@ -243,50 +243,32 @@ La última sección del programa es la declaración de funciones. La primera fun
         </article>
         <main>
         <article>
-            <h2 id="cap-5">Parte V</h2>
-                <h2 id="5.1">Arrays y Cadenas</h2>
+            <h2 id="5.1">Arrays y Cadenas</h2>
             <br>
-                <p>Un array es una colección de elementos del mismo tipo, colocados de forma consecutiva en memoria. Las cadenas de caracteres son declaradas en C como arrays de caracteres y permiten la utilización de un cierto número de notaciones y de funciones especiales.</p>
+                <p>Un array es una colección de elementos del mismo tipo, colocados de forma consecutiva en memoria. 
+                    Las cadenas de caracteres son declaradas en C como arrays de caracteres y permiten la utilización de un cierto número de notaciones y de funciones especiales.</p>
         </br>
-            <h2 id="5.1.1">Arrays Unidimensionales</h2>
-                <p>Un array unidimensional, también conocido como vector, es una estructura que almacena una secuencia de elementos del mismo tipo. Estos elementos están indexados de forma consecutiva, lo que permite acceder a ellos mediante un número entero, llamado índice.</p>
-                <h2 id="5.1.2">Declaración de Arrays</h2>
-                <p>La declaración de un array en C++ se refiere al proceso de crear una variable que almacena una colección de elementos del mismo tipo. Un array se compone de elementos consecutivos en memoria, y se puede acceder a cada elemento utilizando un índice entero.</p>
+          <br>  <h2 id="5.1.1">Arrays Unidimensionales</h2> </br>
+                <br><p>Un array unidimensional, también conocido como vector, 
+                    es una estructura que almacena una secuencia de elementos del mismo tipo. 
+                    Estos elementos están indexados de forma consecutiva, lo que permite acceder a ellos mediante un número entero,
+                    llamado índice.</p></br>
+               <br> <h2 id="5.1.2">Declaración de Arrays</h2></br>
+               <br> <p>La declaración de un array en C++ se refiere al proceso de crear una variable que almacena una colección de elementos del mismo tipo.
+                   Un array se compone de elementos consecutivos en memoria, y se puede acceder a cada elemento utilizando un índice entero.</p></br>
 
 <br> La sintaxis general para la declaración de un array en C++ es la siguiente: </br>
 
 <br> tipo nombreArray[tamaño]; </br>
 
 
-<br> Donde "tipo" es el tipo de dato de los elementos del array, "nombreArray" es el nombre que se asigna al array y "tamaño" indica la cantidad de elementos que puede almacenar el array. </br>
+<br> Donde "tipo" es el tipo de dato de los elementos del array, "nombreArray" es el nombre que se asigna al array y "tamaño" indica la cantidad 
+            de elementos que puede almacenar el array. </br>
 
 
 </p>
-                <h2 id="5.1.3">Ejemplos</h2>
-                <p><br>#include <iostream></br>
-<br>using namespace std;</br>
-
-<br>int main() {</br>
-  <br>int miArray[5]; // Declaración del array de enteros</br>
-
- <br> // Asignar valores a los elementos del array</br>
-   <p>miArray[0] = 10;</p>
-  <p> miArray[1] = 20;</p>
-   <p>miArray[2] = 30;</p>
-   <p>miArray[3] = 40;</p>
-  <p> miArray[4] = 50;</p>
-
- <br> // Acceder y mostrar los elementos del array</br>
- <br> cout << "Elementos del array:" << endl;</br>
- <br> for (int i = 0; i < 5; i++) {</br>
-    <br>cout << miArray[i] << " ";</br>
-  <br>}</br>
-<br>  cout << endl;</br>
-
-  <br>return 0;</br>
-<br>}</br>
-
-
+              <br>  <h2 id="5.1.3">Ejemplos</h2></br>
+               <br> <img src="image/arraydeclaracion.jpg" alt=""></br>
 <br>En este ejemplo, primero se declara el array de enteros miArray con un tamaño de 5. Luego, se asignan valores a cada uno de los elementos del array.</br>
 
 <br>Después, utilizamos un bucle for para recorrer el array y mostrar sus elementos uno por uno utilizando cout.</br>
@@ -295,11 +277,18 @@ La última sección del programa es la declaración de funciones. La primera fun
 
 <br>Elementos del array:</br>
 <br>10 20 30 40 50</br></p>
+            
     <br><h2 id="5.1.4">Array Bidimensionales (Matrices)</h2></br>
-                <br><p>Un array bidimensional, también conocido como matriz, es una estructura de datos que almacena elementos en filas y columnas. Es útil para representar estructuras tabulares o conjuntos de datos de dos dimensiones.</p></br>
-               <br> <h2 id="5.1.5">Declaración de Arrays</h2></br>
-     <p>La declaración de un array bidimensional en C++ implica especificar el tipo de los elementos, el nombre del array y el tamaño de las filas y columnas</p>
-                <h2 id="5.1.6">Ejemplos</h2>
+            
+                <br><p>Un array bidimensional, también conocido como matriz, es una estructura de datos que almacena elementos en filas y columnas. 
+                    Es útil para representar estructuras tabulares o conjuntos de datos de dos dimensiones.</p></br>
+            
+               <br> <h2 id="5.1.5">Declaración de Arrays</h2> </br>
+            
+     <br> <p>La declaración de un array bidimensional en C++ implica especificar el tipo de los elementos,
+         el nombre del array y el tamaño de las filas y columnas</p></br>
+            
+                <br> <h2 id="5.1.6">Ejemplos</h2></br>
                <br> <p>Un ejemplo de declaración de una matriz de enteros 3x3:</br>
 
 <br>int matriz[3][3];</br>
