@@ -59,6 +59,41 @@ Los compiladores de C++ proporcionan bibliotecas de funciones, y cada biblioteca
 Para utilizar algo de una biblioteca en un programa (por ejemplo, una función), hay que colocar al principio del programa una directiva de pre procesamiento seguida 
 de la cabecera de la biblioteca entre signos de "menor que" y "mayor que" (<>).
 </p>
+                <br> 
+            <p>Cabe señalar que todas las directivas comienzan con el símbolo numeral #. Dentro de las directivas de preprocesador se encuentran:</p>
+                   <br>
+                 <p>1.	Macros de preprocesador (#define y #undef):</p>
+            <br>
+            <p>Para definir macros de preprocesador, usamos la directiva #define. </p>
+              <br>
+             <p>Cuando el procesador encuentra esta directiva, este reemplaza todas las ocurrencias del identificador y son sustituidas por reemplazo.
+                 Cuando se requiere desactivar una macro, a partir de cierta parte del código, se utiliza la directiva #undef.</p>
+               <br>
+            <p>2.	Inclusiones condicionales (#ifdef, #ifndef, #if, #endif, #else and #elif): Estas directivas permiten incluir o descartar partes de código, si se cumplen algunas condiciones.</p>
+            <br>
+<p>#ifdef: Permite que una sección del programa sea compilada solo si la macro especificada como parámetro ha sido definida, sin importar el valor de esta.</p>
+            <br>
+<p>#ifndef: Permite realizar exactamente todo lo contrario a #ifdef. Las líneas de código que se encuentren entre #ifndef y #endif, serán ejecutadas siempre y cuando la macro señalada como 
+            parámetro de #ifndef no se encuentre definida aún.</p>
+            <br>
+<p>#if, #else y #elif (o else if): Estas directivas tienen el mismo significado que los comandos condicionales de cualquier lenguaje de programación.</p>
+            <br>
+            <p>3.	Control (#line): Cuando compilamos un programa y un error ocurre durante el proceso de compilación, el compilador muestra un mensaje de error con las referencias al nombre del archivo 
+                donde ocurrió el error y un número de línea, por lo que es más fácil encontrar el código que genera el error. La directiva #line nos permite controlar ambas cosas, 
+                los números de línea en los archivos de código, así como el nombre del archivo que queremos que aparece cuando un error ocurre.</p>
+            <br>
+<p>4.	Error (#error): Esta directiva cancela la compilación cuando es encontrada, generando un error de compilación que puede ser especificado según un parámetro de un ejercicio.</p>
+            <br>
+           <p>5.	Inclusión de fichero (#include): Cuando el preprocesador encuentra la directiva #include, este reemplaza todas las ocurrencias de ella por el archivo o cabecera especificada. </p>
+            <br>
+<p>Existen dos formas de utilizar #include:</p>
+            <br>
+<p>#include <cabecera>: Es usado para incluir las cabeceras proporcionadas por defecto, por ejemplo, la librería estándar (string, iostream, etc.).</p>
+            <br>
+<p>#include "archivo”: Es usado para incluir archivos.</p>
+            <br>
+<p>6.	Pragma (#pragma): La directiva #pragma es utilizada para especificar las distintas opciones del compilador. Estas opciones son especificadas dependiendo del compilador que se utilice. 
+    Si el compilador no permite un argumento para #pragma, esto es ignorado y no genera un error de sintaxis.</p>
             <br>
              <p> •	Declaraciones globales
 En esta sección se declaran todas variables y cabeceras de funciones que serán vistas de manera global, es decir, que su alcance es total en el programa.
