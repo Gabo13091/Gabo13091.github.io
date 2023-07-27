@@ -7,8 +7,8 @@
 }
 header{
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
     width: 100%;
 }
 .header_superior{
@@ -23,19 +23,25 @@ header{
 .logo img{
     width: 150px;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 130px;
 }
 .image_fond{
     background-image: url(../image/Image_fond.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 20em;
+    height: 25em;
 }
 main{
-    background: #f0f0f0;
-    padding: 40px 20px;
-    margin-top: 125px;
+    position: relative;
+    background-image: url(../image/Image_fond.jpg);
+    padding: 10px 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
 }
 article{
     border-radius: 10px;
@@ -43,13 +49,15 @@ article{
     margin: 20px auto;
     padding: 40px;
     background: white;
+    justify-content: space-between;
 }
 @media screen and (max-width: 720px){
 
 }
 .texto_inicio{
     text-align: center;
-    margin-top: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .btn-menu{
     float: left;
