@@ -36,7 +36,7 @@ header{
 }
 main{
     background-image: url(../image/Image_fond.jpg);
-    padding: 20px 20px;
+    padding: 30px 0px;
     margin-top: 0px;
     margin-bottom: 0px;
     background-repeat: no-repeat;
@@ -52,6 +52,7 @@ article{
     margin: 20px auto;
     padding: 40px;
     background: white;
+    justify-content: space-between;
 }
 @media screen and (max-width: 720px){
 
@@ -195,30 +196,64 @@ nav{
     font-size: 18px;
 }
 
-
-.testi-container {
-    padding: 0 0 100px 0;
-    text-align: center;
-    color: black;
-    background-color: #fff;
-}
-
-.testi-content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-}
-
-.testi h2{
+.refe-container{
     margin: 25px;
-    color: white;
+    color: black;
     font-size: 40px;
     font-family: 'permanent marker' arial;
+    text-align: center;
     }
-    .refe-container{
-        margin: 25px;
+
+    p { 
+        font-size: 16px;
         color: black;
-        font-size: 40px;
-        font-family: 'permanent marker' arial;
+        margin-bottom: 20px;
+        font-family: 'permanent marker' 'Times New Roman';
+    }
+
+    .testi {
+        padding: 0 0 100px 0;
         text-align: center;
-        }
+    }
+    
+    .testi-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        
+    }
+    
+    h3 {
+    
+        color: rgba(100, 248, 248, 0.918);
+        font-size: 25px;
+        font-family: 'permanent marker';
+        margin: 25px;
+       
+    }
+
+   .testi-1 p {
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'permanent marker';
+    text-align: center;
+
+   }
+
+  .perfil {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    
+   }
+    
+   h2 {
+    color: black;
+    font-size: 20px;
+    font-family: 'permanent marker', cursive;
+    margin-bottom: 25px;
+
+
+    }
+  
+   
