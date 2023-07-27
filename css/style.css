@@ -31,12 +31,12 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 25em;
+    height: 30em;
     
 }
 main{
     background-image: url(../image/Image_fond.jpg);
-    padding: 30px 0px;
+    padding: 10px 40px;
     margin-top: 0px;
     margin-bottom: 0px;
     background-repeat: no-repeat;
@@ -47,7 +47,6 @@ main{
 }
 article{
     border-radius: 10px;
-    width: 90%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 40px;
@@ -217,24 +216,27 @@ nav{
     }
     
     .testi-content {
-        display: flex;
+        display: -webkit-inline-flex;
         justify-content: space-between;
-        margin-top: 45px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 20px auto;
         
     }
     
     h3 {
     
         color: rgba(100, 248, 248, 0.918);
-        font-size: 25px;
+        font-size: 20px;
         font-family: 'permanent marker';
-        margin: 25px;
+        margin: 0px;
+        text-align: center;
        
     }
 
    .testi-1 p {
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'permanent marker';
     text-align: center;
 
@@ -244,16 +246,14 @@ nav{
     text-align: center;
     color: #fff;
     font-size: 40px;
-    
+
    }
     
    h2 {
     color: black;
     font-size: 20px;
-    font-family: 'permanent marker', cursive;
-    margin-bottom: 25px;
-
-
+    font-family: 'permanent marker' cursive;
+    margin-bottom: 20px;
     }
   
    
