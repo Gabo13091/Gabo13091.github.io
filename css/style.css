@@ -1,14 +1,15 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: Arial;
     text-decoration: none;
 }
+
 header{
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
     width: 100%;
 }
 .header_superior{
@@ -21,9 +22,9 @@ header{
     border-radius: 10px;
 }
 .logo img{
-    width: 150px;
+    width: 100px;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 120px;
 }
 .image_fond{
     background-image: url(../image/Image_fond.jpg);
@@ -31,14 +32,22 @@ header{
     background-attachment: fixed;
     background-size: cover;
     height: 20em;
+    
 }
 main{
-    background: #f0f0f0;
-    padding: 40px 20px;
-    margin-top: 125px;
+    background-image: url(../image/Image_fond.jpg);
+    padding: 10px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
 }
 article{
     border-radius: 10px;
+    width: 90%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 40px;
@@ -49,11 +58,12 @@ article{
 }
 .texto_inicio{
     text-align: center;
-    margin-top: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .btn-menu{
     float: left;
-    line-height: 70px;
+    line-height: 50px;
     color: black;
     font-size: 40px;
     cursor: pointer;
@@ -64,7 +74,7 @@ label{
     cursor: pointer;
 }
 nav{
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     font-size: 20px;
     margin-top: 25px;
@@ -84,19 +94,19 @@ nav{
     position: relative;
     display: block;
     text-transform: uppercase;
-    margin: 20px 0;
-    padding: 10px 20px;
+    margin: 20px 0px;
+    padding: 5px 20px;
     text-decoration: none;
     color: #262626;
     font-size: 18px;
-    font-weight: 600;
-    transition: .5s;
+    font-weight: 700;
+    transition: .1s;
     z-index: 1; 
     &:before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0px;
+        left: 0px;
         width: 100%;
         height: 100%;
         border-top: 2px solid #262626;
@@ -183,9 +193,13 @@ nav{
     cursor: pointer;
     font-size: 18px;
 }
-.testi {
+
+
+.testi-container {
     padding: 0 0 100px 0;
     text-align: center;
+    color: black;
+    background-color: #fff;
 }
 
 .testi-content {
@@ -196,13 +210,13 @@ nav{
 
 .testi h2{
     margin: 25px;
-    color: #1c1c1c;
+    color: white;
     font-size: 40px;
     font-family: 'permanent marker' arial;
     }
     .refe-container{
         margin: 25px;
-        color: #1c1c1c;
+        color: black;
         font-size: 40px;
         font-family: 'permanent marker' arial;
         text-align: center;
