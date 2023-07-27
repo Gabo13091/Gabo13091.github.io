@@ -60,6 +60,8 @@ article{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-image: url(../image/Image_fond.jpg);
+    color: #fff;
 }
 .btn-menu{
     float: left;
