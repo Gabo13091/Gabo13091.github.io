@@ -14,9 +14,9 @@
                     <label for="btn-menu" class="icon-menu"></label>
                 </div>
                 <ul class="menu_horizontal">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li> <a href="#refe">Referencias Bibliograficas</a></li>
-                    <li><a href="#estudi">Estudiantes</a></li>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li> <a href="#estudi">Estudiantes</a></li>
+                    <li><a href="#refe">Referencias Bibliograficas</a></li>
                 </ul>
             </nav>
             <div class="logo">
@@ -46,127 +46,132 @@
     <main>
         <article>
             <h2 id="cap-1">Estructura de un programa</h2>
-            <br>
+        
             <p>En general, los programas escritos en C++ tienen una estructura (básica) compuesta por tres secciones:</p>
-                <br>
+                
 <p>1.	Directivas de preprocesador</p>
-                <br>
+                
 <p>2.	Declaraciones globales</p>
-                <br>
+                
 <p>3.	Declaración de funciones</p>
-               <br>
+               
             <p> •	Directivas de preprocesador
 Los compiladores de C++ proporcionan bibliotecas de funciones, y cada biblioteca de funciones tiene asociada un archivo de definición que se denomina cabecera.
 Para utilizar algo de una biblioteca en un programa (por ejemplo, una función), hay que colocar al principio del programa una directiva de pre procesamiento seguida 
 de la cabecera de la biblioteca entre signos de "menor que" y "mayor que" (<>).
 </p>
-                <br> 
+            
             <p>Cabe señalar que todas las directivas comienzan con el símbolo numeral #. Dentro de las directivas de preprocesador se encuentran:</p>
-                   <br>
+                   
                  <p>1.	Macros de preprocesador (#define y #undef):</p>
             <br>
             <p>Para definir macros de preprocesador, usamos la directiva #define. </p>
-              <br>
+              
              <p>Cuando el procesador encuentra esta directiva, este reemplaza todas las ocurrencias del identificador y son sustituidas por reemplazo.
                  Cuando se requiere desactivar una macro, a partir de cierta parte del código, se utiliza la directiva #undef.</p>
-               <br>
+            
             <p>2.	Inclusiones condicionales (#ifdef, #ifndef, #if, #endif, #else and #elif): Estas directivas permiten incluir o descartar partes de código, si se cumplen algunas condiciones.</p>
-            <br>
+            
 <p>#ifdef: Permite que una sección del programa sea compilada solo si la macro especificada como parámetro ha sido definida, sin importar el valor de esta.</p>
-            <br>
+            
 <p>#ifndef: Permite realizar exactamente todo lo contrario a #ifdef. Las líneas de código que se encuentren entre #ifndef y #endif, serán ejecutadas siempre y cuando la macro señalada como 
             parámetro de #ifndef no se encuentre definida aún.</p>
-            <br>
+            
 <p>#if, #else y #elif (o else if): Estas directivas tienen el mismo significado que los comandos condicionales de cualquier lenguaje de programación.</p>
-            <br>
+            
             <p>3.	Control (#line): Cuando compilamos un programa y un error ocurre durante el proceso de compilación, el compilador muestra un mensaje de error con las referencias al nombre del archivo 
                 donde ocurrió el error y un número de línea, por lo que es más fácil encontrar el código que genera el error. La directiva #line nos permite controlar ambas cosas, 
                 los números de línea en los archivos de código, así como el nombre del archivo que queremos que aparece cuando un error ocurre.</p>
-            <br>
+            
 <p>4.	Error (#error): Esta directiva cancela la compilación cuando es encontrada, generando un error de compilación que puede ser especificado según un parámetro de un ejercicio.</p>
-            <br>
+            
            <p>5.	Inclusión de fichero (#include): Cuando el preprocesador encuentra la directiva #include, este reemplaza todas las ocurrencias de ella por el archivo o cabecera especificada. </p>
-            <br>
+            
 <p>Existen dos formas de utilizar #include:</p>
-            <br>
+            
 <p>#include <cabecera>: Es usado para incluir las cabeceras proporcionadas por defecto, por ejemplo, la librería estándar (string, iostream, etc.).</p>
-            <br>
+            
 <p>#include "archivo”: Es usado para incluir archivos.</p>
-            <br>
+            
 <p>6.	Pragma (#pragma): La directiva #pragma es utilizada para especificar las distintas opciones del compilador. Estas opciones son especificadas dependiendo del compilador que se utilice. 
     Si el compilador no permite un argumento para #pragma, esto es ignorado y no genera un error de sintaxis.</p>
-            <br>
+            
              <p> •	Declaraciones globales
 En esta sección se declaran todas variables y cabeceras de funciones que serán vistas de manera global, es decir, que su alcance es total en el programa.
 </p>
-             <br>
+             
              <p>•	Declaración de funciones
 La última sección del programa es la declaración de funciones. La primera función que se debe declarar es la función principal o "main". La función main es la más importante, 
                  pues es la que es invocada cuando el programa se ejecuta. Toda instrucción que no sea declarada dentro de esta, simplemente no será considerada.
 </p>
-            <br>    
+           
         </article>
     </main>
-    
+    <div class="image_fond">
+        <h2></h2>
+        <p></p>
+    </div>
      <main>
         <article>
-            <h2 id="cap-2">Tipos de Datos en C++</h2><br>
-          
+            <h2 id="cap-2">Tipos de Datos en C++</h2>
+            <br>
+              <p> Tipos de datos simples en C++</p>
+            <br>
             <p>C++ es un lenguaje de programación que hereda muchos conceptos del lenguaje C, es un lenguaje compilado y fuertemente tipado, 
                 lo que significa que en las variables con las que trabajamos hay que indicar el tipo del dato que van a guardar cuando se declaran, 
                 lo que puede hacer que tengamos problemas y se generen errores.</p>
-            <br>  
+             
             <p>Los tipos de datos básicos normalmente son los numéricos y en la siguiente tabla podemos ver estos tipos de datos simples en C++, 
                 su nombre, descripción, el tamaño definido por el tipo de dato, que proporciona la cantidad de información que podemos guardar en una variable de ese tipo de dato, 
                 y el rango de valores que permite almacenar.</p>
-            <br>
+            
              <img src="image/Tipos en C++.png" alt="">
-             <br>
+             
              <p> Tipos de datos complejos en C++</p>
-              <br>
+            
             <p> •	Matrices / Array</p>
-              <br>
+            
             <p> Los array son un tipo dato complejo, en el sentido de que nos permiten guardar conjuntos de datos, pero siempre datos del mismo tipo.</p>
-              <br>
+              
             <p>Sintaxis: int numeros [5] = {1, 2, 3, 4, 5};</p>
-              <br>
+              
             <p>Hay que recordar que un array es una estructura estática, es decir, el tamaño del mismo no cambia a lo largo de la ejecución del programa.</p>
-             <br>
+             
             <p>•    Estructuras</p>
-            <br>
+            
             <p>Las estructuras nos permiten guardar un conjunto de datos, pero esos datos pueden ser de distinto tipo.</p>
-            <br>
+            
             <p>Sintaxis: struct tiempo {int hora, minuto, segundo};</p>
-             <br>
+             
              <p>Operaciones básicas en C++</p>
-             <br>
+             
             <p>Se llaman operadores aritméticos a aquellos que permiten realizar cálculos con valores numéricos para obtener un resultado. 
                 Los operadores aritméticos más habituales son la suma, resta, multiplicación y división.</p>
-             <br>
+             
             <p>Existen otros operadores admitidos que constituyen formas de expresar abreviadamente una operación, 
             algunos programadores utilizan con frecuencia expresiones abreviadas porque les resultan más rápidas a la hora de escribir código.</p>
-             <br>
+             
             <img src="image/Operaciones Aritmeticas.png" alt="">
-              <br>
-            <p>Entrada y salida de datos en C++. Uso de cin y cout.</p>
             <br>
+            <br> <p>Entrada y salida de datos en C++. Uso de cin y cout.</p>
+            
             <p>La entrada y salida de datos en C++ es simple (al menos para los casos más comunes).
             Mostrar texto por pantalla en C++ es muy simple. Para imprimir una salida de texto en C++ se hace uso de la instrucción cout, junto con (<<).
             Es importante tener en cuenta que la instrucción cout siempre va acompañada de (<<) para controlar el flujo de datos que sale. No te fijes mucho en ellos, 
             solo ten siempre presente que cout viene acompañado de (<<) para tener cout (<<)  como resultado</p>
-                <br>
+            
                 <p>Leer datos por teclado en C++ se hace usando el comando cin >> es importante notar el uso de los dos signos >> que son usados para controlar el flujo de datos.
                 No te preocupes mucho por ellos, solo ten en cuenta que cada vez que vaya a usar la instrucción cin debes agregarle >> para quedar con un cin>>. 
                 Una manera muy sencilla de recordar esta instrucción es que in significa entrar y como estamos programando en C++ le añadimos la letra C al comienzo quedando así cin>> (sin olvidar los >>).</p>
-                <br>
+            
                 <p>Uso de scanf para leer valores y cadenas de texto (string) en C++</p>
-                <br>
+                
                 <p>El operador scanf al igual que printf fueron ideados para el lenguaje C (no para C++), por lo cual su uso es más primitivo y, en cierto modo, complejo. 
                 Leer datos con scanf implica comprender un poco el concepto de punteros y particularmente en el caso de string (que es una librería de C++) se complica aún más, 
                 pues debemos convertir ese string en un array definido de caracteres (char).</p>
-                <br>
+                
                 <p>Modificadores en C++</p>
-                <br>
+                
                 <p>Los modificadores de tipo, como dicen su nombre, modifica los tipos de datos de acuerdo a su rango. Por ejemplo:</p>
                    <br>
                   <p>1.	short (corto) afecta a int.</p>
@@ -178,47 +183,50 @@ La última sección del programa es la declaración de funciones. La primera fun
                   <p>4.	unsigned (sin signo) afecta a chat y int.</p>
                    <br>
                 <p>Los ejemplos de uso son muy simples, por ejemplo, si queremos un int corto usamos lo siguiente: short int.</p>
-                      <br>
+                      
                 <p>Si queremos un entero largo sin signo usamos lo siguiente: unsigned long int.</p>
-                      <br>
+                      
                 <p>El uso que se le puede dar a los modificados pueden ser muchos, para cálculos exactos, programas con características especiales, etc.</p>
-                      <br>
+                      
     </article>
     </main>
-    
+    <div class="image_fond">
+        <h2></h2>
+        <p></p>
+    </div>
     <main>
         <article>
             <h2 id="cap-4">Funciones</h2>
-            <br>
+            
             <p>Las funciones son un conjunto de procedimiento encapsulados en un bloque, usualmente reciben parámetros, cuyos valores utilizan para efectuar operaciones  y adicionalmente retornan un valor.
                 Esta definición proviene de la definición de función matemática la cual posee un dominio y un rango, <br>es decir  un conjunto de valores que puede tomar y un conjunto de valores que puede retornar luego de cualquier operación.</p>
-                <br>
+            
                 <h2>Ejemplos de funciones</h2>
-                <br>
+                
                 <p>El siguiente programa lee por teclado un año, calcula y muestra si es bisiesto; y para realizar el cálculo utiliza una función llamada bisiesto. 
                     La función bisiesta recibe el año leído por teclado, comprueba si es o no bisiesto y devuelve (1) si lo es ó (0) si no lo es.</p>
-            <br>
+            
             <img src="image/Ejmplo de funciones1.jpg" alt="">
           <br>
           <br>
          <p>La siguiente función acepta dos enteros de un autor de llamada y devuelve su suma; a y b son parámetros de tipo int.</p>
-         <br>
+         
          <img src="image/Ejemplo de funciones2.jpg" alt="">
          <br>
          <br>
          <h2>Prototipos</h2>
-         <br>
+         
          <p>En C++ es obligatorio usar prototipos. Un prototipo es una declaración de una función.
             Consiste en una presentación de la función, exactamente con la misma estructura que la definición, pero sin cuerpo y terminada con un «;». </p>
-         <br>Un prototipo sirve para indicar al compilador los tipos de retorno y de los parámetros de una función, de modo que compruebe si son del tipo correcto cada vez que se use esta función dentro del programa, o para hacer las conversiones de tipo cuando sea necesario.<br>
-         <br> Normalmente, los prototipos de las funciones se declaran dentro del fichero del programa, o bien se incluyen desde un fichero externo, llamado fichero de cabecera, (para esto se usa la directiva #include).<br>
+         Un prototipo sirve para indicar al compilador los tipos de retorno y de los parámetros de una función, de modo que compruebe si son del tipo correcto cada vez que se use esta función dentro del programa, o para hacer las conversiones de tipo cuando sea necesario.<br>
+         <br> Normalmente, los prototipos de las funciones se declaran dentro del fichero del programa, o bien se incluyen desde un fichero externo, llamado fichero de cabecera, (para esto se usa la directiva #include). <br>
          <br>
          <h2>Ejemplos de prototipos</h2>
-         <br> 
+         
          <p>
             Para corregir el código, defina o declare struct o union en el ámbito global antes del prototipo de función:
          </p>
-         <br>
+         
          <img src="image/prototipo1.jpg" alt="">
          <br>
          <br>
@@ -228,7 +236,7 @@ La última sección del programa es la declaración de funciones. La primera fun
          <br>
          <br>
          <h2>Paso de argumentos</h2>
-         <br>
+         
          <p>
             Un argumento puede ser cualquier valor de tipo fundamental, estructura, unión o puntero. Todos los argumentos se pasan por valor. 
             Esto significa que se asigna una copia del argumento al parámetro correspondiente. La función no conoce la ubicación de memoria real del argumento pasado. 
@@ -237,9 +245,9 @@ La última sección del programa es la declaración de funciones. La primera fun
             Los punteros son una manera de que una función acceda a un valor por referencia, Puesto que un puntero contiene la dirección de la variable, la función puede usar esta dirección para tener acceso al valor de la variable. 
             Los argumentos de puntero permiten que una función obtenga acceso a las matrices y funciones, aunque las matrices y funciones no se pueden pasar como argumentos.<br>
          </p>
-         <br>
+         
          <h2>Ejemplo de argumentos</h2>
-         <br>
+         
          <p>
             En este ejemplo se usan punteros como argumentos:
          </p>
@@ -248,11 +256,11 @@ La última sección del programa es la declaración de funciones. La primera fun
          <br>
          <br>
          <h2>Valores de retorno</h2>
-         <br>
+         
          <p>El valor de retorno es el dato que se devuelve a la función que llama a una función o método después de que esta haya sido ejecutada.</p>
          <br>
          <h2>Ejemplo de valores de retorno</h2>
-         <br>
+         
          <p>Un ejemplo de una función con valor de retornos en C++ sería la función 'sum' que se define para sumar dos valores enteros y devolver el resultado. 
             La función tendría la siguiente firma:</p><br>
             <img src="image/valores de retorno1.jpg" alt="">
@@ -266,82 +274,79 @@ La última sección del programa es la declaración de funciones. La primera fun
                 <br>
                 <br>
                 <p>A continuación, se hace uso la función `sum` llamada desde el método principal y se pasan dos valores a la función como argumentos. 
-                    Luego, se devuelve el valor de retornos de la función `sum`. Finalmente, se imprime el resultado en la consola.</p><br>
+                    Luego, se devuelve el valor de retornos de la función `sum`. Finalmente, se imprime el resultado en la consola.</p>
                     <h2>Macros</h2>
-                    <br>
+
                     <p>Es un mecanismo para expandir texto en tiempo de compilación. 
                         En otras palabras, las macros son instrucciones que se expanden durante la compilación, en lugar de ser procesadas por el compilador. 
                         Las macros se utilizan para simplificar la escritura de código repetitivo y para hacer que el código sea más fácil de leer y mantener.</p>
-                        <br>
+                        
                         <h2>Ejemplos de macros</h2>
-                        <br>
+                        
                         <p>Una macro de C++ se define utilizando la directiva "#define". Por ejemplo, la siguiente macro define una constante llamada "PI":
                         </p>
-                        <br>
                         <img src="image/macros1.jpg" alt="">
                         <br>
                         <br>
                         <p>Después de definir la macro, se puede utilizar en cualquier parte del código. 
                             Por ejemplo, la siguiente línea de código utiliza la macro "PI" para calcular el área de un círculo:</p>
-                            <br>
+                            
                             <img src="image/macros2.jpg" alt="">
                             <br>
                             <br>
                             <p>Otro ejemplo de macro en C++ es una macro que toma un parámetro y lo convierte en mayúsculas. 
                                 La siguiente macro toma una cadena de texto y la convierte en mayúsculas:</p>
-                                <br>
+                                
                                 <img src="image/macros3.jpg" alt="">
                                 <br>
                                 <br>
                                 <p>Después de definir la macro, se puede utilizar en cualquier parte del código. 
                                     Por ejemplo, la siguiente línea de código utiliza la macro "TO_UPPER" para convertir una cadena en mayúsculas:</p>
-                                    <br>
+                                    
                                     <img src="image/macros4.jpg" alt="">
                                     <br>
                                     <br>
                                     <h2>Recursividad</h2>
-                                    <br>
+                                    
                                     <p>Es un proceso mediante el que una función se llama a sí misma de forma repetida, hasta que se satisface alguna determinada condición, 
                                         este proceso se utiliza para computaciones repetidas en las que cada acción se determina mediante un resultado anterior y de esta forma se pueden escribir muchos prob-<br>lemas iterativos.</p>
-                                        <br>
+                                        
                                         <h2>Ejemplo de Recursividad</h2>
-                                        <br>
+                                        
                                         <img src="image/recursividad.jpg" alt="">
                                         <br>
                                         <br>
                                         <p>En este ejemplo, la función se define para calcular la factorial de un número entero y devolver el resultado. 
                                             La función se llama así recursivamente hasta que llega a donde el número es igual a 0 y finalmente, La función devuelve 1 en este caso.</p>
-
-                                        
-                                   
+          
                     </article>
     </main>
-        
+        <div class="image_fond">
+            <h2></h2>
+            <p></p>
+        </div>
         <main>
         <article>
         <h2 id="cap-5">Arrays y Cadenas</h2>
-            <br>
+
                 <p>Un array es una colección de elementos del mismo tipo, colocados de forma consecutiva en memoria. 
                     Las cadenas de caracteres son declaradas en C como arrays de caracteres y permiten la utilización de un cierto número de notaciones y de funciones especiales.</p>
-        </br>
-          <br> <h2 id="5.1.1">Arrays Unidimensionales</h2> </br>
-                <br><p>Un array unidimensional, también conocido como vector, 
+           <h2 id="5.1.1">Arrays Unidimensionales</h2>
+                <p>Un array unidimensional, también conocido como vector, 
                     es una estructura que almacena una secuencia de elementos del mismo tipo. 
                     Estos elementos están indexados de forma consecutiva, lo que permite acceder a ellos mediante un número entero,
-                    llamado índice.</p></br>
-               <br> <h2 id="5.1.2">Declaración de Arrays</h2></br>
-               <br><p>La declaración de un array en C++ se refiere al proceso de crear una variable que almacena una colección de elementos del mismo tipo.
-                   Un array se compone de elementos consecutivos en memoria, y se puede acceder a cada elemento utilizando un índice entero.</p></br>
-<br> La sintaxis general para la declaración de un array en C++ es la siguiente: </br>
+                    llamado índice.</p>
+               <h2 id="5.1.2">Declaración de Arrays</h2>
+               <p>La declaración de un array en C++ se refiere al proceso de crear una variable que almacena una colección de elementos del mismo tipo.
+                   Un array se compone de elementos consecutivos en memoria, y se puede acceder a cada elemento utilizando un índice entero.</p>
+La sintaxis general para la declaración de un array en C++ es la siguiente:
 
-<br> tipo nombreArray[tamaño]; </br>
-
+tipo nombreArray[tamaño]; <br> 
 <br> Donde "tipo" es el tipo de dato de los elementos del array, "nombreArray" es el nombre que se asigna al array y "tamaño" indica la cantidad 
-            de elementos que puede almacenar el array. </br>
-
+            de elementos que puede almacenar el array.
 
 </p>
-              <br>  <h2 id="5.1.3">Ejemplo</h2></br>
+              <h2 id="5.1.3">Ejemplo</h2>
                 <img src="image/arraydeclaracion.JPG" alt="">
 <br>En este ejemplo, primero se declara el array de enteros miArray con un tamaño de 5. Luego, se asignan valores a cada uno de los elementos del array.</br>
 
@@ -352,52 +357,49 @@ La última sección del programa es la declaración de funciones. La primera fun
 <br>Elementos del array:</br>
 <br>10 20 30 40 50</br></p>
             
-    <br><h2 id="5.1.4">Array Bidimensionales (Matrices)</h2></br>
+<h2 id="5.1.4">Array Bidimensionales (Matrices)</h2>
             
-                <br><p>Un array bidimensional, también conocido como matriz, es una estructura de datos que almacena elementos en filas y columnas. 
-                    Es útil para representar estructuras tabulares o conjuntos de datos de dos dimensiones.</p></br>
+                <p>Un array bidimensional, también conocido como matriz, es una estructura de datos que almacena elementos en filas y columnas. 
+                    Es útil para representar estructuras tabulares o conjuntos de datos de dos dimensiones.</p>
             
-               <br> <h2 id="5.1.5">Declaración de Arrays</h2> </br>
+               <h2 id="5.1.5">Declaración de Arrays</h2> 
             
-     <br> <p>La declaración de un array bidimensional en C++ implica especificar el tipo de los elementos,
-         el nombre del array y el tamaño de las filas y columnas</p></br>
+     <p>La declaración de un array bidimensional en C++ implica especificar el tipo de los elementos,
+         el nombre del array y el tamaño de las filas y columnas</p>
             
-                <br> <h2 id="5.1.6">Ejemplos</h2></br>
-               <br> <p>Un ejemplo de declaración de una matriz de enteros 3x3:</br>
+                <h2 id="5.1.6">Ejemplos</h2>
+               <p>Un ejemplo de declaración de una matriz de enteros 3x3:<br>
 
-<br>int matriz[3][3];</br>
+<br>int matriz[3][3];<br>
 
 
-<br>En este caso, se declara una matriz llamada "matriz" que puede almacenar 3 filas y 3 columnas de elementos enteros. Los elementos se pueden acceder utilizando índices bidimensionales, como matriz[i][j], donde i representa la fila y j representa la columna.</br>
+<br>En este caso, se declara una matriz llamada "matriz" que puede almacenar 3 filas y 3 columnas de elementos enteros. Los elementos se pueden acceder utilizando índices bidimensionales, como matriz[i][j], donde i representa la fila y j representa la columna.<br>
 
 <br>Un ejemplo de cómo inicializar y acceder a los elementos de una matriz:</br>
     <br> <img src="image/ejemplo bidimensional1.JPG" alt=""></br>
     
-<br>En este ejemplo, se declara una matriz 3x3 de enteros llamada "matriz" y se inicializa con valores del 1 al 9.</br>
-
-<br>Luego, utilizamos dos bucles for anidados para recorrer la matriz y mostrar sus elementos utilizando cout. Cada elemento se accede mediante los índices i y j.</br>
+En este ejemplo, se declara una matriz 3x3 de enteros llamada "matriz" y se inicializa con valores del 1 al 9. Luego, utilizamos dos bucles for anidados para recorrer la matriz y mostrar sus elementos utilizando cout. Cada elemento se accede mediante los índices i y j.</br>
 
 <br>La salida en la pantalla será:</br>
 <br> <img src="image/elementosmatriz.JPG" alt=""></br>
 </p>
-                 <br><h2 id="5.1.7">Array Tridimensionales y Multidimensionales</h2></br>
-                <br><p>Array multidimensional en C++:
-Un array multidimensional es una estructura de datos que almacena elementos en más de dos dimensiones. Puedes pensar en ellos como matrices anidadas, donde cada elemento puede contener un array adicional.
-               <br> El arreglo tridimensional o de tres dimensiones, está formado por un conjunto de elementos de un mismo tipo de datos que se almacenan bajo un mismo nombre y que, al igual que en los unidimensionales y bidimensionales, se diferencian por la posición que tiene cada elemento dentro del arreglo de datos, con la aclaración de que la disposición de los elementos es una combinación del arreglo unidimensional y bidimensional</br>
+                 <h2 id="5.1.7">Array Tridimensionales y Multidimensionales</h2>
+                <p>Array multidimensional en C++: Un array multidimensional es una estructura de datos que almacena elementos en más de dos dimensiones. Puedes pensar en ellos como matrices anidadas, donde cada elemento puede contener un array adicional.<br>
+               <br> El arreglo tridimensional o de tres dimensiones, está formado por un conjunto de elementos de un mismo tipo de datos que se almacenan bajo un mismo nombre y que, al igual que en los unidimensionales y bidimensionales, se diferencian por la posición que tiene cada elemento dentro del arreglo de datos, con la aclaración de que la disposición de los elementos es una combinación del arreglo unidimensional y bidimensional
                 </p>
-                 <br> <h2 id="5.1.8">Declaración de Arrays</h2></br>
-               <br> <p>La declaración de un array multidimensional en C++ implica especificar el tipo de los elementos, el nombre del array y los tamaños de cada dimensión. Aquí tienes un ejemplo de declaración de un array multidimensional de enteros 2x3x4:</br>
+                 <h2 id="5.1.8">Declaración de Arrays</h2>
+               <p>La declaración de un array multidimensional en C++ implica especificar el tipo de los elementos, el nombre del array y los tamaños de cada dimensión. Aquí tienes un ejemplo de declaración de un array multidimensional de enteros 2x3x4:<br>
 
 <br>int array3D[2][3][4];</br>
 
 <br>En este caso, se declara un array llamado "array3D" con tres dimensiones. Puede almacenar 2 "bloques", cada uno de los cuales contiene 3 filas y 4 columnas de elementos enteros. Los elementos se pueden acceder utilizando índices multidimensionales, como array3D[i][j][k].</br>
 
 </p>
-               <br> <h2 id="5.1.9">Ejemplos</h2></br>
+               <h2 id="5.1.9">Ejemplos</h2>
     
-                <br> <img src="image/arraytridimensioanl.JPG" alt=""> </br>
+                <img src="image/arraytridimensioanl.JPG" alt=""> </br>
     
-               <br>  En este ejemplo, se declara un array tridimensional llamado "array3D". 
+               En este ejemplo, se declara un array tridimensional llamado "array3D". 
     Luego, se utiliza un conjunto de bucles for anidados para asignar valores a los elementos del array.</br>
 
  <br>Después, utilizamos bucles for anidados nuevamente para recorrer el array y mostrar sus elementos utilizando cout. 
@@ -410,36 +412,36 @@ Un array multidimensional es una estructura de datos que almacena elementos en m
                 <br>
                 <br>
                 <h2 id="5.2">Asignación de Valores</h2>
-                <br>
+                
                 <p>Para asignar un valor a una variable de C++, se utiliza una expresión de asignación. Las expresiones de asignación asignan un valor al operando izquierdo. El operando izquierdo debe ser un valor modificable. Un valor es una expresión que representa un objeto de datos que se puede examinar y alterar.</p>
-                <br>
+                
 <p>C contiene dos tipos de operadores de asignación: simple y compuesto. Un operador de asignación simple proporciona el valor del operando derecho al operando izquierdo.</p>
-                <br>
+                
 <p>Nota: Sólo los operadores de asignación que trabajan para C funcionarán para C++, es decir, no hay soporte para operadores sobrecargados.</p>
-                <br>
-                <br>
+                
+                
                 <h2 id="5.2.1">Ejemplos</h2>
-                <br>
+                
                 <p>Se muestra como se puede asignar el valor de número al miembro employee de la estructura payroll.</p>
-                <br>
+                
 <p>Por ejemplo:payroll.employee = number;</p>
-                <br>
-                <br>
+                
+                
 <p>Los operadores de asignación compuestos realizan una operación en ambos operandos y otorgan el resultado de dicha operación al operando izquierdo.</p>
-                <br>
+                
 <p>Por ejemplo: index += 2</p>
-                <br>
-                <br>
+                
                 <h2 id="5.3">Paso de Argumentos de Tipo Arrays</h2>
-                <br>
+                
                 <p>C ++ no permite pasar una matriz completa como un argumento a una función. 
                 Sin embargo, puedes pasar un puntero a una matriz especificando el nombre de la matriz sin un índice. 
                 Para pasar una matriz de una sola dimensión como argumento en una función, se debe declarar el parámetro formal en una de las siguientes tres formas 
                 y los tres métodos de declaración producirán resultados similares porque cada uno le dice al compilador que recibirá un puntero entero.</p>
-                <br>
-                <br>
+                
+                
                 <h2 id="5.3.1">Ejemplos</h2>
-                <br>
+            <br>
+ 
             <p>
              Método 1: Parámetro como puntero 
              </p>
@@ -470,58 +472,134 @@ Un array multidimensional es una estructura de datos que almacena elementos en m
             de arreglos de dos dimensiones que son más comúnmente llamados matrices.
             </p>
             <br>
+            <br>
+            
+            <h2 id="5.5">Ejemplo</h2>
+  
     <p>
     Los arreglos multidimensionales son:
     </p>
-                <br>
+                
         <p>1.Declaración de una matriz:las matrices se pueden ver como un arreglo de arreglos o un arreglo de dos dimensiones. 
             Un arreglo sencillo de enteros de tamaño N se puede declarar como int arr[N];. 
             Si queremos hacer un arreglo de de tamaño Mde arreglos de tamaño N de enteros entonces habría que hacer algo como int mat[M][N];</p>
-                <br>
+        <br>
+            <img src="image/arreglo 1.JPG" alt="">  
+        <br>
+        <p>Si se busca una representación gráfica un arreglo y de una matriz entonces podríamos pensar en un arreglo como una lista (o un renglón) y una matriz como una tabla.</p>
+        <br>
+            <img src="image/arreglo 1 1.JPG" alt=""> 
+        <br>
+        <p>
+            Nota que el arreglo arr está declarando N variables y la matriz mat está declarando N M variables, es decir, está declarando M
+             arreglos de tamaño N cada uno. Se refiere al primer arreglo como mat[0][]; y al primer elemento del primer arreglo como mat[0][0];. Si se quiere referir al quinto 
+             elemento del tercer arreglo sería mat[2][4];. Nótese que no podemos hacer algo como cout << mat[x] pues nos estaríamos refiriendo a todo un arreglo, no a un solo elemento.
+        </p>
+        <br>
+            <img src="image/arreglo 1 2.JPG" alt=""> 
+        <p>Nota que siempre puedes referirte a los arreglos como las columnas o como las filas de manera prácticamente indistinta, pero es muy importante que mantengas el mismo criterio en todo el programa.</p>
+        <br>
+        <br>
         <p>2.Arreglos de más de dos dimensiones: Siempre se puede declarar arreglos de más de dos dimensiones. Se puede agregar hasta 8 dimensiones en un mismo arreglo. 
              Esta clase de implementaciones son útiles en diferentes situaciones</p>
-                <br>
+        <br>
+            <img src="image/arreglo 2.JPG" alt=""> 
+       <br>
+       <br>
         <p>3.Dimensiones máximas:No solo hay que considerar que máximo se podrá declarar un arreglo de ocho dimensiones.
             Hay que recordar siempre la cantidad de memoria que estás utilizando. No importa como se maneje el tamaño de cada dimensión, 
             lo que importa es el tamaño total del arreglo en cuestión. De la misma forma un arreglo de tres dimensiones de 100×100×100
             está declarando un millón de variables.</p>
                 <br>
                 <br>
-                <h2 id="5.5">Ejemplo</h2>
-                <br>
-                <p></p>
-                <br>
-                <br>
+    
                 <h2 id="5.6">Array de Tipo de Cadena(STRING)</h2>
                 <br>
                 <p>En C++ las cadenas de caracteres no son más que arrays de caracteres, salvo que a este tipo de arrays el compilador les da un tratamiento especial. 
                 Se puede manipular las cadenas de caracteres de la misma manera en que manipula cualquier otro tipo de array. Sin embargo, es preferible hacer uso de 
-                una librería estándar especialmente escrita para manipulación de cadenas de caracteres, refiriéndose a la librería <string.h> y que viene 
+                una librería estándar especialmente escrita para manipulación de cadenas de caracteres, refiriéndose a la librería < string.h > y que viene 
                 incluida con todo compilador de C y C++.</p>
-                <br>
-                <br>
+                
                 <h2 id="5.7">Iteraciones en Array Unidimensionales, Array Bidimensionales (Matrices), Array Tridimensionales y Multidimensionales</h2>
-                <br>
+                
                     <h2>1. Array unidimensional:</h2>
-                    <br>  
+                      
                     <img src="image/ejemplo 1.JPG" alt="">
-                    <br>
+                    
                     <h2>2. Array bidimensional (matrices):</h2>
-                    <br>  
+                      
                     <img src="image/ejemplo 2.JPG" alt="">
-                    <br>
+                    
                     <h2>3. Array tridimensional:</h2>
-                    <br>  
+                     
                     <img src="image/ejemplo 3.JPG" alt="">
                     <h2>4. Array multidimensionales:</h2>
-                    <br>  
+                     
                     <p>Para arrays con más de tres dimensiones, el proceso es similar; solo se debe anidar más bucles para cada dimensión adicional.</p>
-                    <br>
+                    
                     <p>Hay que recordar que en C++, los arrays son indexados desde 0, y para acceder a los elementos, se utiliza la notación `array[i][j][k]` para arrays con tres dimensiones.</p>
                     <br>
         </article>
     </main>
-  
+    <div class="image_fond">
+        <h2></h2>
+        <p></p>
+    </div>
+    <section id="estudi" class="testi container">
+        <br>
+        <h2>Estudiantes</h2>
+        <div class="testi-content">
+            <div class="testi-1">
+                <img src="image/gabriel.png" alt="">
+                <h3>Azuaje Gabriel </h3><br>
+                <p>
+                C.I. 30.769.452<br>
+                Correo electronico: gabrielazuaje2003@gmail.com<br>
+                Número telefonico: 0412-200-00-48
+                </p>
+            </div>
+            <div class="testi-1">
+                <img src="image/freddy.png" alt="">
+                <h3>López Freddy</h3><br>
+                <p>
+                C.I 25.213.445<br>
+                Correo electronico: Lfreddy430@gmail.com<br>
+                Número telefonico: 0412-227-40-86
+                </p>
+            </div>
+            <div class="testi-1">
+                <img src="image/yoheli.png" alt="">
+                <h3>Mota Yohelis</h3><br>
+                <p>
+                C.I. 27.449.058<br>
+                Correo electronico: yohelisrodriguez235@gmail.com<br>
+                Número telefonico: 0424-203-59-95
+                </p>
+            </div>
+            <div class="testi-1">
+                <img src="image/angeles.png" alt="">
+                <h3>Uzcategui Mariangela</h3><br>
+                <p>
+                C.I. 28.406.208<br>
+                Correo electronico: terezambrano02@gmail.com<br>
+                Número telefonico: 0424-172-32-59
+                </p>
+            </div>
+            <div class="testi-1">
+                <img src="image/maria.png" alt="">
+                <h3>Zambrano Maria</h3><br>
+                <p>
+                C.I. 30.358.345<br>
+                Correo electronico: terezambrano02@gmail.com<br>
+                Número telefonico: 0416-316-62-42
+                </p>
+            </div>
+        </section>
+        </div>
+        <div class="image_fond">
+            <h2></h2>
+            <p></p>
+        </div>
 <main>
     <article id="refe" >
         <h2 id="refe-1" class="refe-container">Referencias Bibliograficas</h2>
@@ -561,56 +639,9 @@ Un array multidimensional es una estructura de datos que almacena elementos en m
             
         </p>
     </article>
+</div>
+<div class="image_fond">
+</div>
 </main>
-<section id="estudi" class="testi container">
-    <br>
-    <h2>Estudiantes</h2>
-    <div class="testi-content">
-        <div class="testi-1">
-            <img src="image/gabriel.png" alt="">
-            <h3>Azuaje Gabriel </h3><br>
-            <p>
-            C.I. 30.769.452<br>
-            Correo electronico: gabrielazuaje2003@gmail.com<br>
-            Número telefonico: 0412-200-00-48
-            </p>
-        </div>
-        <div class="testi-1">
-            <img src="image/freddy.png" alt="">
-            <h3>López Freddy</h3><br>
-            <p>
-            C.I 25.213.445<br>
-            Correo electronico: Lfreddy430@gmail.com<br>
-            Número telefonico: 0412-227-40-86
-            </p>
-        </div>
-        <div class="testi-1">
-            <img src="image/yoheli.png" alt="">
-            <h3>Mota Yohelis</h3><br>
-            <p>
-            C.I. 27.449.058<br>
-            Correo electronico: yohelisrodriguez235@gmail.com<br>
-            Número telefonico: 0424-203-59-95
-            </p>
-        </div>
-        <div class="testi-1">
-            <img src="image/angeles.png" alt="">
-            <h3>Uzcategui Mariangela</h3><br>
-            <p>
-            C.I. 28.406.208<br>
-            Correo electronico: terezambrano02@gmail.com<br>
-            Número telefonico: 0424-172-32-59
-            </p>
-        </div>
-        <div class="testi-1">
-            <img src="image/maria.png" alt="">
-            <h3>Zambrano Maria</h3><br>
-            <p>
-            C.I. 30.358.345<br>
-            Correo electronico: terezambrano02@gmail.com<br>
-            Número telefonico: 0416-316-62-42
-            </p>
-        </div>
-    </section>
 </body>
 </html>
