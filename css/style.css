@@ -33,7 +33,7 @@ header{
     height: 25em;
 }
 main{
-    position: relative;
+   
     background-image: url(../image/Image_fond.jpg);
     padding: 10px 50px;
     margin-top: 0px;
@@ -47,7 +47,7 @@ article{
     border-radius: 10px;
     max-width: 1200px;
     margin: 20px auto;
-    padding: 40px;
+    padding: 60px;
     background: white;
     justify-content: space-between;
 }
@@ -200,6 +200,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
+    
 }
 
 .testi h2{
