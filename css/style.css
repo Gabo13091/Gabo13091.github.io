@@ -31,12 +31,17 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 20em;
+    height: 25em;
 }
 main{
-    background: #f0f0f0;
-    padding: 40px 20px;
-    margin-top: 125px;
+    position: relative;
+    background-image: url(../image/Image_fond.jpg);
+    padding: 10px 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 article{
     border-radius: 10px;
