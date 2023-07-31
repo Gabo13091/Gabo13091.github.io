@@ -24,7 +24,7 @@ header{
 .logo img{
     width: 100px;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 70px;
 }
 .image_fond{
     background-image: url(../image/Image_fond.jpg);
@@ -45,7 +45,7 @@ main{
 }
 article{
     border-radius: 10px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 60px;
     background: white;
@@ -193,7 +193,6 @@ nav{
 }
 
 .refe-container{
-    margin: 25px;
     color: black;
     font-size: 40px;
     font-family: 'permanent marker' arial;
