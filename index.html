@@ -46,128 +46,127 @@
     <main>
         <article>
             <h2 id="cap-1">Estructura de un programa</h2>
-        
+            <br>
             <p>En general, los programas escritos en C++ tienen una estructura (básica) compuesta por tres secciones:</p>
-                
-<p>1.	Directivas de preprocesador</p>
-                
-<p>2.	Declaraciones globales</p>
-                
-<p>3.	Declaración de funciones</p>
-               
-            <p> •	Directivas de preprocesador
-Los compiladores de C++ proporcionan bibliotecas de funciones, y cada biblioteca de funciones tiene asociada un archivo de definición que se denomina cabecera.
-Para utilizar algo de una biblioteca en un programa (por ejemplo, una función), hay que colocar al principio del programa una directiva de pre procesamiento seguida 
-de la cabecera de la biblioteca entre signos de "menor que" y "mayor que" (<>).
-</p>
-            
+            <br>   
+            <h2>1.	Directivas de preprocesador</h2>
+                                <br>
+            <h2>2.	Declaraciones globales</h2>
+                                <br>
+            <h2>3.	Declaración de funciones</h2>
+                               <br>
+           <h2> •	Directivas de preprocesador</h2>
+            <p>Los compiladores de C++ proporcionan bibliotecas de funciones, y cada biblioteca de funciones tiene asociada un archivo de definición que se denomina cabecera.
+            Para utilizar algo de una biblioteca en un programa (por ejemplo, una función), hay que colocar al principio del programa una directiva de pre procesamiento seguida 
+            de la cabecera de la biblioteca entre signos de "menor que" y "mayor que" (<>).
+            </p>
+            <br>   
             <p>Cabe señalar que todas las directivas comienzan con el símbolo numeral #. Dentro de las directivas de preprocesador se encuentran:</p>
-                   
+              <br>         
                  <p>1.	Macros de preprocesador (#define y #undef):</p>
             <br>
-            <p>Para definir macros de preprocesador, usamos la directiva #define. </p>
-              
-             <p>Cuando el procesador encuentra esta directiva, este reemplaza todas las ocurrencias del identificador y son sustituidas por reemplazo.
-                 Cuando se requiere desactivar una macro, a partir de cierta parte del código, se utiliza la directiva #undef.</p>
-            
+            <p>Para definir macros de preprocesador, usamos la directiva #define.
+            Cuando el procesador encuentra esta directiva, este reemplaza todas las ocurrencias del identificador y son sustituidas por reemplazo. </p>
+            <br>
+            <p>Cuando se requiere desactivar una macro, a partir de cierta parte del código, se utiliza la directiva #undef.</p>
+            <br>   
             <p>2.	Inclusiones condicionales (#ifdef, #ifndef, #if, #endif, #else and #elif): Estas directivas permiten incluir o descartar partes de código, si se cumplen algunas condiciones.</p>
-            
+             <br>   
 <p>#ifdef: Permite que una sección del programa sea compilada solo si la macro especificada como parámetro ha sido definida, sin importar el valor de esta.</p>
-            
+             <br>   
 <p>#ifndef: Permite realizar exactamente todo lo contrario a #ifdef. Las líneas de código que se encuentren entre #ifndef y #endif, serán ejecutadas siempre y cuando la macro señalada como 
             parámetro de #ifndef no se encuentre definida aún.</p>
-            
+             <br>   
 <p>#if, #else y #elif (o else if): Estas directivas tienen el mismo significado que los comandos condicionales de cualquier lenguaje de programación.</p>
-            
+             <br>   
             <p>3.	Control (#line): Cuando compilamos un programa y un error ocurre durante el proceso de compilación, el compilador muestra un mensaje de error con las referencias al nombre del archivo 
                 donde ocurrió el error y un número de línea, por lo que es más fácil encontrar el código que genera el error. La directiva #line nos permite controlar ambas cosas, 
                 los números de línea en los archivos de código, así como el nombre del archivo que queremos que aparece cuando un error ocurre.</p>
-            
+             <br>   
 <p>4.	Error (#error): Esta directiva cancela la compilación cuando es encontrada, generando un error de compilación que puede ser especificado según un parámetro de un ejercicio.</p>
-            
+             <br>   
            <p>5.	Inclusión de fichero (#include): Cuando el preprocesador encuentra la directiva #include, este reemplaza todas las ocurrencias de ella por el archivo o cabecera especificada. </p>
-            
+             <br> 
 <p>Existen dos formas de utilizar #include:</p>
-            
+             <br> 
 <p>#include <cabecera>: Es usado para incluir las cabeceras proporcionadas por defecto, por ejemplo, la librería estándar (string, iostream, etc.).</p>
-            
+             <br> 
 <p>#include "archivo”: Es usado para incluir archivos.</p>
-            
+             <br> 
 <p>6.	Pragma (#pragma): La directiva #pragma es utilizada para especificar las distintas opciones del compilador. Estas opciones son especificadas dependiendo del compilador que se utilice. 
     Si el compilador no permite un argumento para #pragma, esto es ignorado y no genera un error de sintaxis.</p>
-            
-             <p> •	Declaraciones globales
-En esta sección se declaran todas variables y cabeceras de funciones que serán vistas de manera global, es decir, que su alcance es total en el programa.
+             <br> 
+            <h2> •	Declaraciones globales</h2>
+ <p>En esta sección se declaran todas variables y cabeceras de funciones que serán vistas de manera global, es decir, que su alcance es total en el programa.
 </p>
-             
-             <p>•	Declaración de funciones
-La última sección del programa es la declaración de funciones. La primera función que se debe declarar es la función principal o "main". La función main es la más importante, 
+              <br> 
+             <h2>•	Declaración de funciones</h2>
+<p>La última sección del programa es la declaración de funciones. La primera función que se debe declarar es la función principal o "main". La función main es la más importante, 
                  pues es la que es invocada cuando el programa se ejecuta. Toda instrucción que no sea declarada dentro de esta, simplemente no será considerada.
 </p>
-           
         </article>
     </main>
      <main>
         <article>
             <h2 id="cap-2">Tipos de Datos en C++</h2>
             <br>
-              <p> Tipos de datos simples en C++</p>
+            <h2>Tipos de datos simples en C++ </h2>
             <br>
             <p>C++ es un lenguaje de programación que hereda muchos conceptos del lenguaje C, es un lenguaje compilado y fuertemente tipado, 
                 lo que significa que en las variables con las que trabajamos hay que indicar el tipo del dato que van a guardar cuando se declaran, 
                 lo que puede hacer que tengamos problemas y se generen errores.</p>
-             
+              <br>
             <p>Los tipos de datos básicos normalmente son los numéricos y en la siguiente tabla podemos ver estos tipos de datos simples en C++, 
                 su nombre, descripción, el tamaño definido por el tipo de dato, que proporciona la cantidad de información que podemos guardar en una variable de ese tipo de dato, 
                 y el rango de valores que permite almacenar.</p>
-            
+             <br>
              <img src="image/Tipos en C++.png" alt="">
-             
-             <p> Tipos de datos complejos en C++</p>
-            
+              <br>
+             <h2> Tipos de datos complejos en C++</h2>
+             <br>
             <p> •	Matrices / Array</p>
-            
+             <br>
             <p> Los array son un tipo dato complejo, en el sentido de que nos permiten guardar conjuntos de datos, pero siempre datos del mismo tipo.</p>
-              
+               <br>
             <p>Sintaxis: int numeros [5] = {1, 2, 3, 4, 5};</p>
-              
+               <br>
             <p>Hay que recordar que un array es una estructura estática, es decir, el tamaño del mismo no cambia a lo largo de la ejecución del programa.</p>
-             
+              <br>
             <p>•    Estructuras</p>
-            
+             <br>
             <p>Las estructuras nos permiten guardar un conjunto de datos, pero esos datos pueden ser de distinto tipo.</p>
-            
+             <br>
             <p>Sintaxis: struct tiempo {int hora, minuto, segundo};</p>
-             
-             <p>Operaciones básicas en C++</p>
-             
+              <br>
+            <h2>Operaciones básicas en C++</h2>
+              <br>
             <p>Se llaman operadores aritméticos a aquellos que permiten realizar cálculos con valores numéricos para obtener un resultado. 
                 Los operadores aritméticos más habituales son la suma, resta, multiplicación y división.</p>
-             
+              <br>
             <p>Existen otros operadores admitidos que constituyen formas de expresar abreviadamente una operación, 
             algunos programadores utilizan con frecuencia expresiones abreviadas porque les resultan más rápidas a la hora de escribir código.</p>
-             
+              <br>
             <img src="image/Operaciones Aritmeticas.png" alt="">
             <br>
-            <br> <p>Entrada y salida de datos en C++. Uso de cin y cout.</p>
-            
+            <h2>Entrada y salida de datos en C++. Uso de cin y cout.</h2>
+             <br>
             <p>La entrada y salida de datos en C++ es simple (al menos para los casos más comunes).
             Mostrar texto por pantalla en C++ es muy simple. Para imprimir una salida de texto en C++ se hace uso de la instrucción cout, junto con (<<).
             Es importante tener en cuenta que la instrucción cout siempre va acompañada de (<<) para controlar el flujo de datos que sale. No te fijes mucho en ellos, 
             solo ten siempre presente que cout viene acompañado de (<<) para tener cout (<<)  como resultado</p>
-            
+             <br>
                 <p>Leer datos por teclado en C++ se hace usando el comando cin >> es importante notar el uso de los dos signos >> que son usados para controlar el flujo de datos.
                 No te preocupes mucho por ellos, solo ten en cuenta que cada vez que vaya a usar la instrucción cin debes agregarle >> para quedar con un cin>>. 
                 Una manera muy sencilla de recordar esta instrucción es que in significa entrar y como estamos programando en C++ le añadimos la letra C al comienzo quedando así cin>> (sin olvidar los >>).</p>
-            
+             <br>
                 <p>Uso de scanf para leer valores y cadenas de texto (string) en C++</p>
-                
+                <br>
                 <p>El operador scanf al igual que printf fueron ideados para el lenguaje C (no para C++), por lo cual su uso es más primitivo y, en cierto modo, complejo. 
                 Leer datos con scanf implica comprender un poco el concepto de punteros y particularmente en el caso de string (que es una librería de C++) se complica aún más, 
                 pues debemos convertir ese string en un array definido de caracteres (char).</p>
-                
-                <p>Modificadores en C++</p>
-                
+                <br>
+                 <h2>Modificadores en C++</h2>
+                <br>
                 <p>Los modificadores de tipo, como dicen su nombre, modifica los tipos de datos de acuerdo a su rango. Por ejemplo:</p>
                    <br>
                   <p>1.	short (corto) afecta a int.</p>
@@ -179,12 +178,136 @@ La última sección del programa es la declaración de funciones. La primera fun
                   <p>4.	unsigned (sin signo) afecta a chat y int.</p>
                    <br>
                 <p>Los ejemplos de uso son muy simples, por ejemplo, si queremos un int corto usamos lo siguiente: short int.</p>
-                      
+                   <br>   
                 <p>Si queremos un entero largo sin signo usamos lo siguiente: unsigned long int.</p>
-                      
+                   <br>   
                 <p>El uso que se le puede dar a los modificados pueden ser muchos, para cálculos exactos, programas con características especiales, etc.</p>
                       
     </article>
+    </main>
+    <main>
+        <article>
+            <h2 id="cap-3">Estructura de Control</h2>
+            <br>
+             <p>Las estructuras de control determinan la secuencia en la que se ejecutarán las instrucciones de un programa. Las estructuras de control se dividen en tres categorías en función del flujo de ejecución:</p>
+            <br>
+            <p>1.	Estructura Secuencial</p>
+             <br>
+            <p>2.	Estructura Condicional, Selectiva O Alternativa</p>
+             <br>
+            <p>3.	Estructuras Repetitivas O Iterativas</p>
+             <br>
+            <h2>IF</h2>
+            <p>Esta instrucción hace que se ejecuten unas sentencias u otras dependiendo del valor que toma una condición.</p>
+             <br>
+               <p>La instrucción if puede ser simple o doble:</p>
+             <br>
+            <h2>•	Alternativa simple:</h2>
+             <br>
+               <p>if (condicion)</p>
+                <p>instrucción1;</p>
+             <br>
+            <p>if (condicion)</p>
+        <p>{</p>
+        <p>instrucción 1;</p>
+        <p>instrucción 2;</p>
+        <p>instrucción 3;</p>
+        <p>}</p>
+             <br>
+             <h2>•	Alternativa doble.</h2>
+             <br>
+               <p>if (condicion)</p>
+                <p>instrucción1;</p>
+            <p>else</p>
+                <p>instrucción2;</p>
+             <br>
+                 <p>if (condicion)</p>
+                 <p>{</p>
+                 <p>Instrucción 1;</p>
+                 <p>instrucción 2;</p>
+                 <p>}</p>
+                 <p>else</p>
+                 <p>{</p>
+                 <p>instrucción 3;</p>
+                 <p>instrucción 4;</p>
+                 <p>}  </p>
+              <br> 
+             <img src="image/ejemplo 1 estructura.jpg" alt="">
+             <br>
+            <h2>SWITCH</h2>
+                 <p>La sentencia switch selecciona una de entre múltiples alternativas.
+                    La forma general de esta expresión es la siguiente:</p>
+             <br>   
+            <p>switch (expresión)</p>
+                <p>switch (expresión)</p>
+                <p>{</p>
+                <p>case constante1:</p>
+                           <p>instrucciones;</p>
+                           <p>break;</p>
+                  <p>case constante 2:</p>
+                           <p>instrucciones;</p>
+                           <p>break;</p>
+                  <p>· · ·</p>
+                  <p>default:</p>
+                           <p>instrucciones;</p>
+                 <p>}</p>
+              <br> 
+                   <p>En una instrucción switch, expresión debe ser una expresión con un valor entero, y constante1, constante2, ..., deben ser constantes enteras, constantes de tipo carácter o una expresión 
+                    constante de valor entero. Expresión también puede ser de tipo char, ya que los caracteres individuales tienen valores enteros.
+                    Dentro de un case puede aparecer una sola instrucción o un bloque de instrucciones.
+                    La instrucción switch evalúa la expresión entre paréntesis y compara su valor con las constantes de cada case. Se ejecutarán las instrucciones de aquel case cuya constante coincida con el valor 
+                    de la expresión, y continúa hasta el final del bloque o hasta una instrucción que transfiera el control fuera del bloque del switch (una instrucción break, o return). Si no existe una constante igual 
+                    al valor de la expresión, entonces se ejecutan las sentencias que están a continuación de default si existe (no es obligatorio que exista, y no tiene porqué ponerse siempre al final).</p>
+              <br> 
+               <img src="image/ejemplo 2 estructura.jpg" alt="">
+            <br> 
+                <h2>WHILE</h2>
+             <br> 
+                   <p>while (condicion) </p>
+                    <p>{ </p>
+                    <p>instrucción 1; </p>
+                    <p>..............</p>
+                    <p>instrucción N; </p>
+                    <p>} </p>
+                <br> 
+              <p>Ejecuta una instrucción o un bloque de instrucciones cero o más veces, dependiendo del valor de la condición.
+                Se evalúa la condición, y si es cierta, se ejecuta la instrucción o bloque de instrucciones y se vuelve a evaluar la condición; 
+                pero si la condición es falsa, se pasa a ejecutar la siguiente instrucción después del while.</p>
+                <br>
+                <img src="image/ejemplo 3 estructura.jpg" alt="">
+                <br> 
+             <h2>DO WHILE</h2>
+               <br> 
+            <p>do </p>
+                <p>{ </p>
+                <p>instrucción 1; </p>
+                <p>.............. </p>
+                <p>instrucción N; </p>
+                <p>} while (condicion);  </p>
+                <br>
+           <p>Ejecuta una instrucción o un bloque de instrucciones, una o más veces, dependiendo del valor de la condición.
+            Se ejecuta la instrucción o bloque de instrucciones y a continuación se evalúa la condición. Si la condición es cierta, se vuelve a ejecutar la instrucción o bloque de instrucciones, 
+            y si es falsa, pasa a ejecutarse la siguiente instrucción después del do-while. 
+            Cuando se utiliza una instrucción do-while el bloque de instrucciones se ejecuta al menos una vez, ya que la condición se evalúa al final. En cambio, con una instrucción while, 
+            puede suceder que el bloque de instrucciones no llegue a ejecutarse nunca si la condición inicialmente es falsa.
+            </p>
+              <br>
+             <img src="image/ejemplo 4 estructura.jpg" alt="">
+            <br>
+              <h2>FOR</h2>
+             <br>
+            <p>for(inicialización; condicion; incremento/decremento) </p>
+                <p> { </p>
+                  <p>instrucción 1; </p>
+                  <p>........... </p>
+                  <p>instrucción N; </p>     
+                 <p>} </p>
+            <br>
+             <p>Un bucle for hace que una instrucción o bloque de instrucciones se repitan un número determinado de veces mientras se cumpla la condición.</p>
+            <br>
+            <img src="image/ejemplo 5 estructura.jpg" alt="">
+             <br>
+            </article>
     </main>
     <main>
         <article>
