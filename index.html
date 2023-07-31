@@ -575,16 +575,15 @@ En este ejemplo, se declara una matriz 3x3 de enteros llamada "matriz" y se inic
                 <br>
                 <br>
             <h2 id="5.4">Arreglos Multidimensionales</h2>
-                <br>
+
             <p>
             En C++ podemos concebir un arreglo como una variable que almacena a otras variables. 
             Podemos hacer arreglos de cualquier tipo de variable, incluso de otros arreglos. 
             Cuando hacemos que cada locación de un arreglo contenga otro arreglo, estamos hablando 
             de arreglos de dos dimensiones que son más comúnmente llamados matrices.
             </p>
-            <br>
-            <br>
-            
+   
+
             <h2 id="5.5">Ejemplo</h2>
   
     <p>
@@ -597,20 +596,24 @@ En este ejemplo, se declara una matriz 3x3 de enteros llamada "matriz" y se inic
         <br>
             <img src="image/arreglo 1.JPG" alt="">  
         <br>
+        <br>
         <p>Si se busca una representación gráfica un arreglo y de una matriz entonces podríamos pensar en un arreglo como una lista (o un renglón) y una matriz como una tabla.</p>
         <br>
             <img src="image/arreglo 1 1.JPG" alt=""> 
+        <br>
         <br>
         <p>
             Nota que el arreglo arr está declarando N variables y la matriz mat está declarando N M variables, es decir, está declarando M
              arreglos de tamaño N cada uno. Se refiere al primer arreglo como mat[0][]; y al primer elemento del primer arreglo como mat[0][0];. Si se quiere referir al quinto 
              elemento del tercer arreglo sería mat[2][4];. Nótese que no podemos hacer algo como cout << mat[x] pues nos estaríamos refiriendo a todo un arreglo, no a un solo elemento.
         </p>
-        <br>
+ 
             <img src="image/arreglo 1 2.JPG" alt=""> 
+            <br>
+            <br>
         <p>Nota que siempre puedes referirte a los arreglos como las columnas o como las filas de manera prácticamente indistinta, pero es muy importante que mantengas el mismo criterio en todo el programa.</p>
         <br>
-        <br>
+
         <p>2.Arreglos de más de dos dimensiones: Siempre se puede declarar arreglos de más de dos dimensiones. Se puede agregar hasta 8 dimensiones en un mismo arreglo. 
              Esta clase de implementaciones son útiles en diferentes situaciones</p>
         <br>
@@ -622,10 +625,9 @@ En este ejemplo, se declara una matriz 3x3 de enteros llamada "matriz" y se inic
             lo que importa es el tamaño total del arreglo en cuestión. De la misma forma un arreglo de tres dimensiones de 100×100×100
             está declarando un millón de variables.</p>
                 <br>
-                <br>
+
     
                 <h2 id="5.6">Array de Tipo de Cadena(STRING)</h2>
-                <br>
                 <p>En C++ las cadenas de caracteres no son más que arrays de caracteres, salvo que a este tipo de arrays el compilador les da un tratamiento especial. 
                 Se puede manipular las cadenas de caracteres de la misma manera en que manipula cualquier otro tipo de array. Sin embargo, es preferible hacer uso de 
                 una librería estándar especialmente escrita para manipulación de cadenas de caracteres, refiriéndose a la librería < string.h > y que viene 

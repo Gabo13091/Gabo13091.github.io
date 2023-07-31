@@ -56,7 +56,8 @@ article{
 }
 .texto_inicio{
     text-align: center;
-    margin-top: 125px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .btn-menu{
     float: left;
@@ -189,6 +190,21 @@ nav{
     color: #fff;
     cursor: pointer;
     font-size: 18px;
+}
+
+.refe-container{
+    margin: 25px;
+    color: black;
+    font-size: 40px;
+    font-family: 'permanent marker' arial;
+    text-align: center;
+}
+
+p { 
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'permanent marker' 'Times New Roman';
 }
 .testi {
     padding: 0 0 100px 0;
