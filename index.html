@@ -212,41 +212,108 @@ La última sección del programa es la declaración de funciones. La primera fun
                <p>La instrucción if puede ser simple o doble:</p>
              <br>
             <h2>•	Alternativa simple:</h2>
-               <p>if (condicion)
-                instrucción1;</p>
-             <p>
-        if (condicion)
-        {
-        instrucción 1;
-        instrucción 2;
-        instrucción 3;
-        }
-        </p>
+             <br>
+               <p>if (condicion)</p>
+                <p>instrucción1;</p>
+             <br>
+            <p>if (condicion)</p>
+        <p>{</p>
+        <p>instrucción 1;</p>
+        <p>instrucción 2;</p>
+        <p>instrucción 3;</p>
+        <p>}</p>
              <br>
              <h2>•	Alternativa doble.</h2>
-               <p>if (condicion)
-                instrucción1;
-            else
-                instrucción2;
-            </p>
              <br>
-             <p>if (condicion)
-                if (condicion)
-                {
-                Instrucción 1;
-                instrucción 2;
-                }
-                else
-                {
-                instrucción 3;
-                instrucción 4;
-                }  </p>
+               <p>if (condicion)</p>
+                <p>instrucción1;</p>
+            <p>else</p>
+                <p>instrucción2;</p>
+             <br>
+                 <p>if (condicion)</p>
+                 <p>{</p>
+                 <p>Instrucción 1;</p>
+                 <p>instrucción 2;</p>
+                 <p>}</p>
+                 <p>else</p>
+                 <p>{</p>
+                 <p>instrucción 3;</p>
+                 <p>instrucción 4;</p>
+                 <p>}  </p>
               <br> 
-                 <p></p>
+             <img src="image/ejemplo 1 estructura.jpg" alt="">
+             <br>
+            <h2>SWITCH</h2>
+                 <p>La sentencia switch selecciona una de entre múltiples alternativas.
+                    La forma general de esta expresión es la siguiente:</p>
              <br>   
-                   <p></p>
-                   <p></p>
-              <p></p>
+            <p>switch (expresión)</p>
+                <p>switch (expresión)</p>
+                <p>{</p>
+                <p>case constante1:</p>
+                           <p>instrucciones;</p>
+                           <p>break;</p>
+                  <p>case constante 2:</p>
+                           <p>instrucciones;</p>
+                           <p>break;</p>
+                  <p>· · ·</p>
+                  <p>default:</p>
+                           <p>instrucciones;</p>
+                 <p>}</p>
+              <br> 
+                   <p>En una instrucción switch, expresión debe ser una expresión con un valor entero, y constante1, constante2, ..., deben ser constantes enteras, constantes de tipo carácter o una expresión 
+                    constante de valor entero. Expresión también puede ser de tipo char, ya que los caracteres individuales tienen valores enteros.
+                    Dentro de un case puede aparecer una sola instrucción o un bloque de instrucciones.
+                    La instrucción switch evalúa la expresión entre paréntesis y compara su valor con las constantes de cada case. Se ejecutarán las instrucciones de aquel case cuya constante coincida con el valor 
+                    de la expresión, y continúa hasta el final del bloque o hasta una instrucción que transfiera el control fuera del bloque del switch (una instrucción break, o return). Si no existe una constante igual 
+                    al valor de la expresión, entonces se ejecutan las sentencias que están a continuación de default si existe (no es obligatorio que exista, y no tiene porqué ponerse siempre al final).</p>
+              <br> 
+               <img src="image/ejemplo 2 estructura.jpg" alt="">
+            <br> 
+                <h2>WHILE</h2>
+             <br> 
+                   <p>while (condicion) </p>
+                    <p>{ </p>
+                    <p>instrucción 1; </p>
+                    <p>..............</p>
+                    <p>instrucción N; </p>
+                    <p>} </p>
+                <br> 
+              <p>Ejecuta una instrucción o un bloque de instrucciones cero o más veces, dependiendo del valor de la condición.
+                Se evalúa la condición, y si es cierta, se ejecuta la instrucción o bloque de instrucciones y se vuelve a evaluar la condición; 
+                pero si la condición es falsa, se pasa a ejecutar la siguiente instrucción después del while.</p>
+                <br>
+                <img src="image/ejemplo 3 estructura.jpg" alt="">
+                <br> 
+             <h2>DO WHILE</h2>
+               <br> 
+            <p>do </p>
+                <p>{ </p>
+                <p>instrucción 1; </p>
+                <p>.............. </p>
+                <p>instrucción N; </p>
+                <p>} while (condicion);  </p>
+                <br>
+           <p>Ejecuta una instrucción o un bloque de instrucciones, una o más veces, dependiendo del valor de la condición.
+            Se ejecuta la instrucción o bloque de instrucciones y a continuación se evalúa la condición. Si la condición es cierta, se vuelve a ejecutar la instrucción o bloque de instrucciones, 
+            y si es falsa, pasa a ejecutarse la siguiente instrucción después del do-while. 
+            Cuando se utiliza una instrucción do-while el bloque de instrucciones se ejecuta al menos una vez, ya que la condición se evalúa al final. En cambio, con una instrucción while, 
+            puede suceder que el bloque de instrucciones no llegue a ejecutarse nunca si la condición inicialmente es falsa.
+            </p>
+              <br>
+             <img src="image/ejemplo 4 estructura.jpg" alt="">
+            <br>
+              <h2>FOR</h2>
+             <br>
+            <p>for(inicialización; condicion; incremento/decremento) </p>
+                <p> { </p>
+                  <p>instrucción 1; </p>
+                  <p>........... </p>
+                  <p>instrucción N; </p>     
+                 <p>} </p>
+            <br>
+             <p>Un bucle for hace que una instrucción o bloque de instrucciones se repitan un número determinado de veces mientras se cumpla la condición.</p>
+            <br>
             </article>
     </main>
     <main>
