@@ -5,6 +5,22 @@
     font-family: Arial;
     text-decoration: none;
 }
+body {
+	margin: 0;
+	padding: 0;
+    background-image: url(../image/Image_fond.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: white;
+	
+	font-size: 1em;
+	line-height: 1.5em;
+    padding-top: 80px;
+}
 
 header{
     position: fixed;
@@ -13,6 +29,7 @@ header{
     width: 100%;
 }
 .header_superior{
+    
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -31,7 +48,7 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 25em;
+
 }
 main{
     position: relative;
@@ -218,7 +235,7 @@ p {
 
 .testi h2{
     margin: 25px;
-    color: #1c1c1c;
+    color: white;
     font-size: 40px;
 
    }
