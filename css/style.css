@@ -15,7 +15,8 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 	font-family: Helvetica, Arial, sans-serif;
-	color: white;
+	text-align: justify;
+    color: black;
 	
 	font-size: 1em;
 	line-height: 1.5em;
@@ -73,6 +74,7 @@ article{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: white
 }
 .btn-menu{
     float: left;
